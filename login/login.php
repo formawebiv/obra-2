@@ -66,11 +66,13 @@
         </form>
     </div> -->
 
-    <div id="login" class="form-signin d-flex justify-content-center ">
+    <!-- FORMULARIO -->
+
+    <div id="login-container" class="form-signin d-flex justify-content-center ">
 		<form action="login.php" method="POST" class="form login">
 
 			<!-- <img class="mb-4" src="assets/img/logo.png" alt="" width="72" height="65"> -->
-			<h1 class="h3 mb-3 fw-normal">Inicia sesión</h1>
+			<h1 class="h3 mb-3 fw-normal text-center">Inicia sesión</h1>
 			<!-- Usuario -->
 			<div class="form-floating">
 				<div class="input-group w-100">
@@ -100,11 +102,11 @@
 					<input type="checkbox" value="remember-me"> Recórdame
 				</label>
 			</div>
-			<button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar</button>
+			<button class="w-100 btn btn-lg btn-secondary" type="submit">Iniciar</button>
 
 		</form>
 	</div>
-
+<!-- --------------------- -->
 
 
 </main>
