@@ -97,7 +97,7 @@ $success: #7952b3;
   fill: currentColor;
 }
 
-// Formulario
+// Formulario login
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -128,13 +128,15 @@ $success: #7952b3;
   
 }
 
-.navbar{
-height: 80px;
-}
-
 #login-container{
   background-color: #c1d8f0;
   border-radius: 5px;
   padding: 35px;
- 
 }
+
+// Header login
+
+.navbar{
+height: 80px;
+}
+
