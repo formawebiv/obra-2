@@ -1,29 +1,3 @@
-// Override Bootstrap's Sass default variables
-//
-// Nearly all variables in Bootstrap are written with the `!default` flag.
-// This allows you to override the default values of those variables before
-// you import Bootstrap's source Sass files.
-//
-// Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, change you can either change
-// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
-// `body { color: red; }`.
-
-
-//
-// Bring in Bootstrap
-//
-
-// Option 1
-//
-// Import all of Bootstrap's CSS
-
-// @import "bootstrap/scss/bootstrap";
-
-// Option 2
-//
-// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
-
 // Toggle global options
 $enable-gradients: true;
 $enable-shadows: true;
@@ -37,6 +11,8 @@ $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
+$light: #5A7E99;
+
 
 // Required
 @import "bootstrap/scss/functions";
@@ -59,13 +35,13 @@ $success: #7952b3;
  @import "bootstrap/scss/nav";
  @import "bootstrap/scss/navbar"; 
  @import "bootstrap/scss/card";
-// @import "bootstrap/scss/breadcrumb";
+ @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/list-group";
+ @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal"; // Requires transitions
@@ -75,7 +51,6 @@ $success: #7952b3;
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas"; // Requires transitions
 @import "bootstrap/scss/placeholders";
-
 // Helpers
 // @import "helpers";
 @import "../node_modules/bootstrap/scss/helpers";
@@ -97,47 +72,4 @@ $success: #7952b3;
   fill: currentColor;
 }
 
-
-
-// Formulario login
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
-  margin-top: 7%;
-}
-
-.form-signin .checkbox {
-  font-weight: 400;
-  margin-top: 5px;
-}
-
-.form-signin .form-floating:focus-within {
-  z-index: 2;
-}
-
-.form-signin input[type="text"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  
-}
-
-#login-container{
-  background-color: #c1d8f0;
-  border-radius: 5px;
-  padding: 35px;
-}
-
-// Header login
-
-.navbar{
-height: 80px;
-}
 

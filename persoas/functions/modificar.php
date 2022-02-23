@@ -1,6 +1,13 @@
 <?php
 require '../../conexion/conexion.php';
 require '../../conexion/sesion.php';
+
+$id = $_GET['id'];
+
+$sql = "SELECT * FROM persoas WHERE id = '$id'";
+$resultado = $mysqli->query($sql);
+$row = $resultado->fetch_array(MYSQLI_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +16,7 @@ require '../../conexion/sesion.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nova Persoa</title>
+  <title>Modificar Persoa</title>
   <!-- esto no sirve no? -->
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- CND de bootstrap -> cambiar cuando toque -->
@@ -21,17 +28,16 @@ require '../../conexion/sesion.php';
 <body>
 
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
-  <h2 style="text-align:center">Novo rexistro de persoa</h2><br>
+  <h2 style="text-align:center">Prueba de lo que se abriría al clicar "Modificar Rexistro" de Persoas</h2><br>
 
   <div class="t-container">
 
     <ul class="t-tabs">
-      <li class="t-tab">Datos Personais</li>
+      <li class="t-tab">Datos Personales</li>
       <li class="t-tab">Formación</li>
       <li class="t-tab">Experiencia</li>
-      <li class="t-tab">Accións</li>
+      <li class="t-tab">Acciones</li>
       <li class="t-tab">Ofertas</li>
-      <!-- tengo sair aqui mientras no haya header -->
       <li class="t-tab"><a href="../../login/logout.php">Saír da sesión</a></li>
     </ul>
 
@@ -39,42 +45,42 @@ require '../../conexion/sesion.php';
 
       <li class="t-content">
         <!-- <p>Contenido Datos</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - DATOS</h3>
+        <h3 class="p-5 text-center">MODIFICAR REXISTRO - DATOS</h3>
 
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
-
+        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
             <label for="nome" class=" control-label">Nome:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nombre" name="nome" placeholder="Nome" required>
+              <input type="text" class="form-control" id="nombre" name="nome" placeholder="Nome" value="<?php echo $row['nome']; ?>" required>
             </div>
           </div>
+          <input type="hidden" id="id" name="id" value="<?php echo $row['id']; ?>" />
 
           <div class="col-md-4">
             <label for="primeiro_apelido" class=" control-label">Primeiro Apelido:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nombre" name="primeiro_apelido" placeholder="Primeiro Apelido" required>
+              <input type="text" class="form-control" id="nombre" name="primeiro_apelido" placeholder="Primeiro Apelido" value="<?php echo $row['primeiro_apelido']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="segundo_apelido" class="control-label">Segundo Apelido:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nombre" name="segundo_apelido" placeholder="Segundo Apelido" required>
+              <input type="text" class="form-control" id="nombre" name="segundo_apelido" placeholder="Segundo Apelido" value="<?php echo $row['segundo_apelido']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="nif" class=" control-label">DNI / NIF:</label>
             <div class="col-sm-10">
-              <input type="tel" class="form-control" id="nif" name="nif" placeholder="Número do DNI" pattern="[0-9]{8}+[A-Z]{1}" maxlength="9" required>
+              <input type="tel" class="form-control" id="nif" name="nif" placeholder="Número do DNI" pattern="[0-9]{8}+[A-Z]{1}" maxlength="9" placeholder="Número do DNI" value="<?php echo $row['nif']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="data_nacemento" class="control-label">Data de nacemento:</label>
             <div class="col-sm-10">
-              <input type="date" class="form-control" id="data_nacemento" name="data_nacemento" placeholder="dd-mm-aa" required>
+              <input type="date" class="form-control" id="data_nacemento" name="data_nacemento" placeholder="dd-mm-aa" value="<?php echo $row['data_nacemento']; ?>" required>
             </div>
           </div>
 
@@ -82,9 +88,9 @@ require '../../conexion/sesion.php';
             <label for="sexo" class="control-label">Sexo:</label>
             <div class="col-sm-10">
               <select class="form-control" id="sexo" name="sexo">
-                <option value="HOME">HOME</option>
-                <option value="MULLER">MULLER</option>
-                <option value="OUTRO">NON DEFINIDO</option>
+                <option value="HOME" <?php if ($row['sexo'] == 'HOME') echo 'selected'; ?>>HOME</option>
+                <option value="MULLER" <?php if ($row['sexo'] == 'MULLER') echo 'selected'; ?>>MULLER</option>
+                <option value="OUTRO" <?php if ($row['sexo'] == 'OUTRO') echo 'selected'; ?>>NON DEFINIDO</option>
               </select>
             </div>
           </div>
@@ -92,21 +98,21 @@ require '../../conexion/sesion.php';
           <div class="col-md-4">
             <label for="codigo_postal" class="control-label">Código postal:</label>
             <div class="col-sm-10">
-              <input type="tel" class="form-control" id="codigo_postal" name="codigo_postal" placeholder="Código postal" maxlength="5" required>
+              <input type="tel" class="form-control" id="codigo_postal" name="codigo_postal" placeholder="Código postal" maxlength="5" value="<?php echo $row['codigo_postal']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="telefono" class="control-label">Teléfono</label>
             <div class="col-sm-10">
-              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" maxlength="9" required>
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" maxlength="9" value="<?php echo $row['telefono']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="email" class="control-label">Correo electrónico:</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" value="<?php echo $row['email']; ?>">
             </div>
           </div>
 
@@ -124,9 +130,9 @@ require '../../conexion/sesion.php';
 
       <li class="t-content">
         <!-- <p>Contenido Formación</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - FORMACIÓN</h3>
+        <h3 class="p-5 text-center">MODIFICAR REXISTRO - FORMACIÓN</h3>
 
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
 
           <div class="col-md-4">
             <label for="estudo" class="control-label">Estudos Básicos</label>
@@ -264,9 +270,9 @@ require '../../conexion/sesion.php';
 
       <li class="t-content">
         <!-- <p>Contenido Experiencia</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - EXPERIENCIA</h3>
+        <h3 class="p-5 text-center">MODIFICAR REXISTRO - EXPERIENCIA</h3>
 
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ano_comezo" class="control-label">Ano de comezo:</label>
             <div class="col-sm-10">
@@ -301,9 +307,9 @@ require '../../conexion/sesion.php';
 
       <li class="t-content">
         <!-- <p>Contenido Acciones</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - ACCIÓNS</h3>
+        <h3 class="p-5 text-center">MODIFICAR REXISTRO - ACCIÓNS</h3>
 
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
 
           <div class="col-md-4">
             <label for="data_nacemento" class="control-label">Data da 1ª entrevista</label>
@@ -371,9 +377,9 @@ require '../../conexion/sesion.php';
 
       <li class="t-content">
         <!-- <p>Contenido Ofertas</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - OFERTAS</h3>
+        <h3 class="p-5 text-center">MODIFICAR REXISTRO - OFERTAS</h3>
 
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ofertade" class="control-label">Tipo de oferta:</label>
             <div class="col-sm-10">
@@ -420,6 +426,7 @@ require '../../conexion/sesion.php';
               <input type="date" class="form-control" id="ofertadata" name="ofertadata">
             </div>
           </div>
+
           <br>
           <br>
           <div class="col-md-4">

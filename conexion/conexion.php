@@ -1,16 +1,9 @@
 <?php
+	$mysqli = new mysqli('127.0.0.1', 'root', '', 'obra');
 
-$conexion;
-$servidor = 'localhost';
-$bd = 'obra';
-$user = 'root';
-$pass = '';
+	if($mysqli->connect_error){
 
-try{
-    $conexion = new PDO('mysql:host='.$servidor.';dbname='.$bd, $user, $pass);
-} catch (PDOException $e){
-    echo "Erro de conexión";
-    exit;
-}
-return $conexion;
+		die('Error en la conexion' . $mysqli->connect_error);
+	}
+  // return $mysqli;
 ?>

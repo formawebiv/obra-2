@@ -1,6 +1,6 @@
 <?php
-require 'conexion/conexion.php';
-require 'conexion/sesion.php';
+require './conexion/conexion.php';
+require './conexion/sesion.php';
 // este cacho de php tiene que ir SIEMPRE al inicio de los archivos de las páginas (a no ser que
 // solo actúen como funciones y no haya front-end), y excepto aquí en el index deben ponerse los
 // dos puntos y / antes del nombre de la carpeta
@@ -11,17 +11,28 @@ require 'conexion/sesion.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <script src="../components/js/header.js"></script>
         <title>OBRA 2 SOL</title>
-    
 </head>
-<body>
 
-<h1>Welcome to SOL</h1>
+<header-component></header-component>
 
-<a href="login/logout.php">Saír da sesión</a>
+<body >
+  <h1>Welcome to SOL</h1>
+  <br><br>
 
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="assets/js/style.css"></script>
+  <a href="persoas/index.php">Index Persoas</a><br>
+  <a href="persoas/functions/nuevo.php">Novo Rexistro Persoas</a>
+
+  <br><br>
+
+  <a href="empresas/index.php">Index Empresas</a><br>
+  <a href="empresas/functions/nuevo.php">Novo Rexistro Empresas</a>
+
+  <br><br>
+
+  <a href="login/logout.php">Saír da sesión</a>
 
 </body>
 </html>
