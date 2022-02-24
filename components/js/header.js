@@ -1,65 +1,62 @@
 class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-        this.innerHTML = `
-        <style>
-        .tab:hover{
-            text-decoration: underline;
-        }
+  connectedCallback() {
+      this.innerHTML = `
 
-    
-        </style>
-        
-       
-
-
-        <header>
-   
-        <nav class="navbar navbar-expand-md navbar-dark mb-1 bg-primary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-          </svg></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-
-            <ul class="navbar-nav mr-auto tabs" style="justify-content: space-evenly;
-            margin-left: 30%">
-                <li class="nav-item tab">
-                <a class="nav-link " aria-current="page" href="../../index.php">INICIO</a>
-                </li>
-                <li class="nav-item tab">
-                <a class="nav-link " aria-current="page" href="#">CITAS</a>
-                </li>
-                <li class="nav-item tab">
-                <a class="nav-link " aria-current="page" href="../../empresas/index.php">EMPRESAS</a>
-                </li>
-                <li class="nav-item tab">
-                <a class="nav-link" aria-current="page" href="../../persoas/index.php">PERSOAS</a>
-                </li>
-                <li class="nav-item tab">
-                <a class="nav-link " aria-current="page" href="../../login/logout.php">SAÍR</a>
-                </li>
-            </ul>
-              <form class="d-flex me-1" style="margin-left: 200px;">
-                <input class="form-control " type="search" placeholder="..." aria-label="Search">
-                <button class="btn btn-outline-warning" style="color: black; background-color: #ffc300;" type="submit">Buscar</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-        `;
-    }
+<style>
+.buscador{
+  margin-right: 30px;
 }
+</style>
 
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3c6ca0;">
+      <div class="container-fluid">
+      <a class="navbar-brand mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+    </svg></a>
 
+        <div class="collapse navbar-collapse " id="navbarColor01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.php">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">CITAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/empresas/index.php">EMPRESAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/persoas/index.php">PERSOAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/login/logout.php">SAÍR</a>
+            </li>
+          </ul>
+         
+        <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
+        <div class="input-group">
+        <input class="form-control border rounded-start" type="text" value="Buscar" id="example-search-input">
+        <span class="input-group-append">
+            <button  class="btn btn-secondary rounded-0 rounded-end buscador" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"  class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
+            </button>
+        </span>
+ </div>
+        </form>
+      
+        </div>
+      </div>
+    </nav>
 
-customElements.define('header-component', Header);
+      `;
+    }
+  }
+  
+  customElements.define('header-component', Header);

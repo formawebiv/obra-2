@@ -72,4 +72,87 @@ $light: #5A7E99;
   fill: currentColor;
 }
 
+//PESTAÑAS SUBSECCIONES
 
+/* CLASES DE LA ESTRUCTURA DE PESTAÑAS, DEBEN MANTENERSE
+t-container = caja div -> ESTILO MODIFICABLE
+t-tabs y t-contents = lista ul -> COMPROBAR SI SE PUEDE
+t-tab y t-content = elementos li -> NECESARIOS PARA EL JS */
+
+.t-container {
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.t-tab{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.t-tabs, .t-contents {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 2% 0 2%;
+  box-sizing: border-box;
+}
+.t-tabs li {
+  
+  color: #fffefe;
+  padding: 0.5em 0.7em;
+  text-decoration: none;
+  float: left;
+  text-align: center;
+  font-size: 1.1em;
+
+  background: rgba(173, 172, 172, 0.933);
+  border-bottom: 0;
+  min-width: 40px;
+  margin-right: 2px;
+  margin-bottom: 0 !important;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.t-tabs li:hover {
+  background-color: $secondary;
+  
+}
+.t-tabs li.selected {
+  color: $secondary;
+  cursor: default;
+  background: #7a7a7a;
+}
+.t-contents {
+  padding: 0 !important
+}
+.t-content {
+  
+  /* background-color: #333; */
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #c1d8f0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  float: left;
+  width: 100%;
+  line-height: 1.3em;
+  text-align: justify;
+  z-index: 1;
+  position: relative;
+  max-height: 0;
+  transition: max-height 0.5s ease 0s;
+  overflow: hidden;
+}
+.t-content.selected {
+  max-height: 3000px;
+  transition: max-height 1.25s ease 0.5s;
+}
+/* los colores comentados son los originales del creador, los que quedan ativos son los que fui probando */
+
+/* AÑADIDO POR VER */
+.t-content p{
+  margin-top: 25px;
+}
+
+#tabla{
+  border-bottom: black 1px solid;
+}
