@@ -80,7 +80,7 @@ t-tabs y t-contents = lista ul -> COMPROBAR SI SE PUEDE
 t-tab y t-content = elementos li -> NECESARIOS PARA EL JS */
 
 .t-container {
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 0 2em;
 }
 
@@ -104,7 +104,7 @@ t-tab y t-content = elementos li -> NECESARIOS PARA EL JS */
   text-align: center;
   font-size: 1.1em;
 
-  background: rgba(173, 172, 172, 0.933);
+  background: rgba(158, 157, 157, 0.933);
   border-bottom: 0;
   min-width: 40px;
   margin-right: 2px;
@@ -117,22 +117,19 @@ t-tab y t-content = elementos li -> NECESARIOS PARA EL JS */
   
 }
 .t-tabs li.selected {
-  color: $secondary;
-  cursor: default;
-  background: #7a7a7a;
+    cursor: default;
+  background: #585858;
 }
 .t-contents {
   padding: 0 !important
 }
 .t-content {
   
-  /* background-color: #333; */
   padding-left: 2%;
   padding-right: 2%;
   background-color: #c1d8f0;
   box-sizing: border-box;
   border-radius: 5px;
-  float: left;
   width: 100%;
   line-height: 1.3em;
   text-align: justify;

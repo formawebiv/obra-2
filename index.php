@@ -13,6 +13,7 @@ require './conexion/sesion.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/index.css">
     <script src="../components/js/header.js"></script>
+    <script src="/components/js/footer.js"></script>
         <title>OBRA 2 SOL</title>
 </head>
 
@@ -33,7 +34,7 @@ require './conexion/sesion.php';
   <br><br>
 
   <a href="login/logout.php">Saír da sesión</a>
-
+  <footer-component></footer-component>
 </body>
 </html>
 

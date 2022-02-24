@@ -19,7 +19,7 @@ require '../../conexion/sesion.php';
 <body>
 <header-component></header-component>
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
-  <h2 class="mt-5 text-center">Novo rexistro de persoa</h2><br>
+  <h2 class="my-5 text-center">Novo rexistro de persoa</h2><br>
 
   <div class="t-container">
 
@@ -36,9 +36,8 @@ require '../../conexion/sesion.php';
 
       <li class="t-content">
         <!-- <p>Contenido Datos</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - DATOS</h3>
-
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+        
+        <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
 
           <div class="col-md-4">
             <label for="nome" class=" control-label">Nome:</label>
@@ -121,9 +120,8 @@ require '../../conexion/sesion.php';
 
       <li class="t-content">
         <!-- <p>Contenido Formación</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - FORMACIÓN</h3>
-
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+       
+        <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
 
           <div class="col-md-4">
             <label for="estudo" class="control-label">Estudos Básicos</label>
@@ -260,10 +258,8 @@ require '../../conexion/sesion.php';
       </li>
 
       <li class="t-content">
-        <!-- <p>Contenido Experiencia</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - EXPERIENCIA</h3>
-
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+        
+        <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ano_comezo" class="control-label">Ano de comezo:</label>
             <div class="col-sm-10">
@@ -297,10 +293,7 @@ require '../../conexion/sesion.php';
       </li>
 
       <li class="t-content">
-        <!-- <p>Contenido Acciones</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - ACCIÓNS</h3>
-
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+               <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
 
           <div class="col-md-4">
             <label for="data_nacemento" class="control-label">Data da 1ª entrevista</label>
@@ -371,10 +364,8 @@ require '../../conexion/sesion.php';
       </li>
 
       <li class="t-content">
-        <!-- <p>Contenido Ofertas</p> -->
-        <h3 class="p-5 text-left">NOVO REXISTRO - OFERTAS</h3>
-
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+    
+        <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ofertade" class="control-label">Tipo de oferta:</label>
             <div class="col-sm-10">
@@ -435,7 +426,7 @@ require '../../conexion/sesion.php';
   </div>
 
   
-  <!-- <footer-component></footer-component>  -->
+  <footer-component></footer-component> 
   <script src="../../tabs.js"></script>
 
 </body>
