@@ -18,17 +18,17 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modificar Persoa</title>
   <!-- esto no sirve no? -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- CND de bootstrap -> cambiar cuando toque -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- ESTILOS DE LAS PESTAÑAS Y SU CONTENIDO -> MODIFICAR CON BOOTSTRAP O LO QUE SEA -->
-  <link rel="stylesheet" href="../../tabs.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <script src="/components/js/header.js"></script>
+    <script src="/components/js/footer.js"></script>
 </head>
 
 <body>
 
+<header-component></header-component>
+
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
-  <h2 style="text-align:center">Prueba de lo que se abriría al clicar "Modificar Rexistro" de Persoas</h2><br>
+  <h2 class="text-center my-4">Modificar datos da persoa</h2><br>
 
   <div class="t-container">
 
@@ -38,16 +38,15 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
       <li class="t-tab">Experiencia</li>
       <li class="t-tab">Acciones</li>
       <li class="t-tab">Ofertas</li>
-      <li class="t-tab"><a href="../../login/logout.php">Saír da sesión</a></li>
     </ul>
 
     <ul class="t-contents">
 
       <li class="t-content">
         <!-- <p>Contenido Datos</p> -->
-        <h3 class="p-5 text-center">MODIFICAR REXISTRO - DATOS</h3>
 
-        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
+
+        <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
             <label for="nome" class=" control-label">Nome:</label>
             <div class="col-sm-10">
@@ -119,7 +118,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           <br>
           <br>
           <div class="col-md-4">
-            <div class="">
+            <div class=" my-4">
               <a href="../index.php" class="btn btn-default">VOLTAR</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
@@ -130,15 +129,15 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
       <li class="t-content">
         <!-- <p>Contenido Formación</p> -->
-        <h3 class="p-5 text-center">MODIFICAR REXISTRO - FORMACIÓN</h3>
+       
 
-        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
+        <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
 
           <div class="col-md-4">
             <label for="estudo" class="control-label">Estudos Básicos</label>
             <div class="col-md-10">
               <select class="form-control" id="estudos" name="estudos">
-                <option value="text"></option>
+              <option value="text" disabled selected hidden>Formación Básica</option>
                 <option value="ESO">E.S.O</option>
                 <option value="COU">C.O.U</option>
               </select>
@@ -149,7 +148,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="superiores" class="control-label">Estudos Superiores</label>
             <div class="col-md-10">
               <select class="form-control" id="superiores" name="superiores">
-                <option value="text"></option>
+              <option value="text" disabled selected hidden>Formación Superior</option>
                 <option value="uni">Universitarios</option>
                 <option value="nouni">Non Universitarios</option>
               </select>
@@ -160,7 +159,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="universitarios" class="control-label">Universitarios</label>
             <div class="col-md-10">
               <select class="form-control" id="universitarios" name="universitarios">
-                <option value="text"></option>
+              <option value="text" disabled selected hidden>Estudos Universitarios</option>
                 <option value="grao">Grao</option>
                 <option value="master">Master</option>
                 <option value="master">Doutorado</option>
@@ -172,7 +171,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="non-universitarios" class="control-label">Non Universitarios</label>
             <div class="col-md-10">
               <select class="form-control" id="non-universitarios" name="nonuniversitarios">
-                <option value="text"></option>
+              <option value="text" disabled selected hidden>Outros</option>
                 <option value="bacharelato">Bacharelato</option>
                 <option value="formacion-profesional">Formación Profesional</option>
               </select>
@@ -183,7 +182,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="fp" class="control-label">Formación Profesional</label>
             <div class="col-md-10">
               <select class="form-control" id="formacion" name="formacion">
-                <option value="text"></option>
+              <option value="text" disabled selected hidden>Formación Profesional</option>
                 <option value="superior">Superior</option>
                 <option value="media">Media</option>
                 <option value="basica">Básica</option>
@@ -195,7 +194,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="familias" class="control-label">Familias profesionais</label>
             <div class="col-md-10">
               <select class="form-control" id="familias" name="familias">
-                <option value="text"></option>
+              <option value="text" disabled selected hidden>Familias profesionais</option>
                 <option value="informatica">Informática e comunicacións</option>
                 <option value="admin">Administración e Xestión</option>
                 <option value="madeira">Madeira, moble e corcho</option>
@@ -209,7 +208,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="complementaria" class="control-label">Formación Complementaria</label>
             <div class="col-md-10">
               <select class="form-control" id="complementaria" name="complementaria">
-                <option value="text"></option>
+              <option value="text" disabled selected hidden>Formación Complementaria</option>
                 <option value="certificados">Certificados Oficiais</option>
                 <option value="curso">Curso Manipulador de Alimentos</option>
               </select>
@@ -221,7 +220,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <div class="col-md-10"></div>
             <select class="form-control" id="idiomas" name="idiomas">
               <optgroup label="Niveis">
-                <option value="text"></option>
+              <option value="text" disabled selected hidden>Niveis</option>
                 <option value="B1">B1</option>
                 <option value="B2">B2</option>
               </optgroup>
@@ -229,7 +228,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
             <select class="form-control" id="idiomas" name="idiomas">
               <optgroup label="Curso">
-                <option value="text"></option>
+              <option value="text" disabled selected hidden>Certificación</option>
                 <option value="text">Cambridge</option>
                 <option value="text">Oxford</option>
               </optgroup>
@@ -260,7 +259,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           <br>
           <br>
           <div class="col-md-4">
-            <div class="">
+            <div class=" my-4">
               <a href="../index.php" class="btn btn-default">VOLTAR</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
@@ -270,9 +269,9 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
       <li class="t-content">
         <!-- <p>Contenido Experiencia</p> -->
-        <h3 class="p-5 text-center">MODIFICAR REXISTRO - EXPERIENCIA</h3>
+        
 
-        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
+        <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ano_comezo" class="control-label">Ano de comezo:</label>
             <div class="col-sm-10">
@@ -297,7 +296,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           <br>
           <br>
           <div class="col-md-4">
-            <div class="">
+            <div class="my-4">
               <a href="../index.php" class="btn btn-default">VOLTAR</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
@@ -307,9 +306,9 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
       <li class="t-content">
         <!-- <p>Contenido Acciones</p> -->
-        <h3 class="p-5 text-center">MODIFICAR REXISTRO - ACCIÓNS</h3>
+        
 
-        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
+        <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
 
           <div class="col-md-4">
             <label for="data_nacemento" class="control-label">Data da 1ª entrevista</label>
@@ -366,7 +365,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           <br>
           <br>
           <div class="col-md-4">
-            <div class="">
+            <div class=" my-4">
               <a href="../index.php" class="btn btn-default">VOLTAR</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
@@ -377,9 +376,9 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
       <li class="t-content">
         <!-- <p>Contenido Ofertas</p> -->
-        <h3 class="p-5 text-center">MODIFICAR REXISTRO - OFERTAS</h3>
+        
 
-        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
+        <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ofertade" class="control-label">Tipo de oferta:</label>
             <div class="col-sm-10">
@@ -430,7 +429,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           <br>
           <br>
           <div class="col-md-4">
-            <div class="">
+            <div class=" my-4">
               <a href="../index.php" class="btn btn-default">VOLTAR</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
@@ -442,7 +441,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
   </div>
 
   <script src="../../tabs.js"></script>
-
+  <footer-component></footer-component>
 </body>
 
 </html>

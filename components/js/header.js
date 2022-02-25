@@ -11,7 +11,7 @@ class Header extends HTMLElement {
   margin-right: 30px;
 }
 
-.nav-item:hover{
+.nav-item+:hover{
   text-decoration:underline;
 }
 </style>
@@ -32,11 +32,12 @@ class Header extends HTMLElement {
               <a class="nav-link active" aria-current="page" href="#">CITAS</a>
             </li>
             <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/persoas/index.php">PERSOAS</a>
+          </li>
+            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/empresas/index.php">EMPRESAS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/persoas/index.php">PERSOAS</a>
-            </li>
+           
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/login/logout.php">SAÍR</a>
             </li>

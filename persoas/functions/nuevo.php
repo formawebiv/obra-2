@@ -19,7 +19,7 @@ require '../../conexion/sesion.php';
 <body>
 <header-component></header-component>
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
-  <h2 class="my-5 text-center">Novo rexistro de persoa</h2><br>
+  <h2 class="my-4 text-center">Novo rexistro de persoa</h2><br>
 
   <div class="t-container">
 
@@ -119,7 +119,6 @@ require '../../conexion/sesion.php';
       </li>
 
       <li class="t-content">
-        <!-- <p>Contenido Formación</p> -->
        
         <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
 
@@ -161,7 +160,7 @@ require '../../conexion/sesion.php';
             <label for="non-universitarios" class="control-label">Non Universitarios</label>
             <div class="col-md-10">
               <select class="form-control" id="non-universitarios" name="nonuniversitarios">
-              <option value="text" disabled selected hidden>...</option>
+              <option value="text" disabled selected hidden>Outros</option>
                 <option value="bacharelato">Bacharelato</option>
                 <option value="formacion-profesional">Formación Profesional</option>
               </select>
@@ -181,7 +180,7 @@ require '../../conexion/sesion.php';
           </div>
 
           <div class="col-md-4">
-            <label for="familias" class="control-label">Familias profesionais</label>
+            <label for="familias" class="control-label">Familias Profesionais</label>
             <div class="col-md-10">
               <select class="form-control" id="familias" name="familias">
               <option value="text" disabled selected hidden>Informática, administración...</option>
@@ -210,7 +209,7 @@ require '../../conexion/sesion.php';
             <div class="col-md-10"></div>
             <select class="form-control" id="idiomas" name="idiomas">
               <optgroup label="Niveis">
-              <option value="text" disabled selected hidden>Dominio de linguas</option>
+              <option value="text" disabled selected hidden>Niveis</option>
                 <option value="B1">B1</option>
                 <option value="B2">B2</option>
               </optgroup>

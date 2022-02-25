@@ -56,6 +56,7 @@ $resultado = $mysqli->query($sql);
         </div>
       </div>
     </div>
+    
     <!-- TABLA -->
 
     <div id="tabla" class="row table-responsive">
