@@ -14,9 +14,10 @@ class Header extends HTMLElement {
 .nav-item+:hover{
   text-decoration:underline;
 }
+
 </style>
 
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3c6ca0;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
       <div class="container-fluid">
       <a class="navbar-brand mx-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
       <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
