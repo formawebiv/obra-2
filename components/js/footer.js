@@ -15,7 +15,7 @@ class Footer extends HTMLElement {
 
 
   <div class="container" id="foooter">
-        <footer  class="py-3">
+        <footer class="py-3">
         <div class=" justify-content-center text-center container">
       <span class="text-black ">© 2022 Servizo de Orientación Laboral</span>
     

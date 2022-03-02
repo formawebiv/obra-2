@@ -43,7 +43,7 @@ require '../../conexion/sesion.php';
 
         <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
           <div class="col-md-4">
-            <label for="nome" class="control-label">Nome:</label>
+            <label for="nome" class="control-label "> Nome:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="nombre" name="nome" placeholder="Nome" required>
             </div>

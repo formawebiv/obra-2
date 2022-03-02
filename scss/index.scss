@@ -153,3 +153,11 @@ t-tab y t-content = elementos li -> NECESARIOS PARA EL JS */
 #tabla{
   border-bottom: black 1px solid;
 }
+
+input[placeholder]{
+  font-style: italic;
+}
+
+select[option]{
+  font-style: italic;
+}

@@ -40,21 +40,21 @@ require '../../conexion/sesion.php';
         <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
 
           <div class="col-md-4">
-            <label for="nome" class=" control-label">Nome:</label>
+            <label for="nome" class="control-label"> NOME:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="nombre" name="nome" placeholder="Nome" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="primeiro_apelido" class=" control-label">Primeiro Apelido:</label>
+            <label for="primeiro_apelido" class=" control-label">PRIMEIRO APELIDO:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="nombre" name="primeiro_apelido" placeholder="Primeiro Apelido" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="segundo_apelido" class="control-label">Segundo Apelido:</label>
+            <label for="segundo_apelido" class="control-label">SEGUNDO APELIDO:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="nombre" name="segundo_apelido" placeholder="Segundo Apelido" required>
             </div>
@@ -68,39 +68,40 @@ require '../../conexion/sesion.php';
           </div>
 
           <div class="col-md-4">
-            <label for="data_nacemento" class="control-label">Data de nacemento:</label>
+            <label for="data_nacemento" class="control-label">DATA DE NACEMENTO:</label>
             <div class="col-sm-10">
               <input type="date" class="form-control" id="data_nacemento" name="data_nacemento" placeholder="dd-mm-aa" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="sexo" class="control-label">Sexo:</label>
+            <label for="sexo" class="control-label">SEXO:</label>
             <div class="col-sm-10">
               <select class="form-control" id="sexo" name="sexo">
-                <option value="HOME">HOME</option>
-                <option value="MULLER">MULLER</option>
-                <option value="OUTRO">NON DEFINIDO</option>
+              <option value="text" disabled selected hidden>...</option>
+              <option value="HOME">Home</option>
+                <option value="MULLER">Muller</option>
+                <option value="OUTRO">Non definido</option>
               </select>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="codigo_postal" class="control-label">Código postal:</label>
+            <label for="codigo_postal" class="control-label">CP:</label>
             <div class="col-sm-10">
               <input type="tel" class="form-control" id="codigo_postal" name="codigo_postal" placeholder="Código postal" maxlength="5" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="telefono" class="control-label">Teléfono</label>
+            <label for="telefono" class="control-label">TELÉFONO</label>
             <div class="col-sm-10">
               <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" maxlength="9" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="email" class="control-label">Correo electrónico:</label>
+            <label for="email" class="control-label">CORREO ELECTRÓNICO:</label>
             <div class="col-sm-10">
               <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico">
             </div>
@@ -126,7 +127,7 @@ require '../../conexion/sesion.php';
             <label for="estudo" class="control-label">Estudos Básicos</label>
             <div class="col-md-10">
               <select class="form-control" id="estudos" name="estudos">
-                <option value="text" disabled selected hidden>Formación básica</option>
+                <option class="italic" value="text" disabled selected hidden> Formación básica</option>
                 <option value="ESO">E.S.O</option>
                 <option value="COU">C.O.U</option>
               </select>

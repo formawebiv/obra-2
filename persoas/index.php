@@ -34,10 +34,12 @@ $resultado = $mysqli->query($sql);
 
 
   <div class="container mb-4">
+  <div class="  mt-4 mb-3 text-center d-flex justify-content-center ">
+        <h2 class=" text-primary bg-secondary w-25 border rounded">Persoas</h2>
+        </div>
     <div class="container mb-5">
       <div class="row">
-        <h2 class="text-center mt-4 mb-3">Persoas</h2>
-
+       
         <div class="col">
           <a href="functions/nuevo.php" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="currentColor" class="bi bi-person-plus" viewBox="-3 1 18 18">
               <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
@@ -62,12 +64,12 @@ $resultado = $mysqli->query($sql);
         <thead>
           <tr class="table-primary">
             <th class="col-sm-1">Nome</th>
-            <th class="col-sm-3">Primeiro Apelido</th>
-            <th class="col-sm-3">Segundo Apelido</th>
+            <th class="col-sm-2">1º Apelido</th>
+            <th class="col-sm-2">2º Apelido</th>
             <th class="col-sm-1">DNI/NIF</th>
-            <th class="col-sm-2">Data de nacemento</th>
+            <th class="col-sm-3">Data de nacemento</th>
             <th class="col-sm-1">Sexo</th>
-            <th class="col-sm-3">Código postal</th>
+            <th class="col-sm-2">CP</th>
             <th class="col-sm-1">Teléfono</th>
             <th class="col-sm-2">Correo</th>
             <th class="col-sm-1">Accións</th>
