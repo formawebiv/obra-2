@@ -1,31 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@sformaweb 
-DavidSeo4
-/
-obra-2
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-obra-2/empresas/functions/update.php /
-
-= oki
-Latest commit e35760e 1 hour ago
- History
- 0 contributors
-54 lines (40 sloc)  2.05 KB
-   
 <?php
 
 require '../../conexion/conexion.php';

@@ -9,25 +9,6 @@
     $ofertas_contratacion = $_POST['ofertas_contratacion'];
     $ofertas_formacion = $_POST['ofertas_formacion'];
 	
-	
-
-	
-	// $arrayIntereses = null;
-	
-	// $num_array = count($intereses);
-	// $contador = 0;
-	
-	// if($num_array>0){
-	// 	foreach ($intereses as $key => $value) {
-	// 		if ($contador != $num_array-1){
-	// 		$arrayIntereses .= $value.' ';
-	// 		$contador++;
-	// 		} else {
-	// 		$arrayIntereses .= $value;
-	// 		}
-	// 	}
-	// }
-	
 	$sql = "INSERT INTO empresas (nome, poboacion, actividade, data_incorporacion, ofertas_contratacion, ofertas_formacion) VALUES ('$nome', '$poboacion', '$actividade', '$data_incorporacion', '$ofertas_contratacion', '$ofertas_formacion')";
 	$resultado = $mysqli->query($sql);
 	
@@ -49,7 +30,7 @@
 					<?php if($resultado) { ?>
 						<h3>REXISTRO GARDADO</h3>
 						<?php } else { ?>
-						<h3>ERROR AO GARDAR</h3>
+						<h3>ERRO AO GARDAR</h3>
 					<?php } ?>
 					
 					<a href="/empresas/index.php" class="btn btn-primary">Regresar</a>
