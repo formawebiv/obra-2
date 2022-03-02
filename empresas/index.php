@@ -58,10 +58,10 @@ $resultado = $mysqli->query($sql);
       </div>
     </div>
     <!-- TABLA -->
-    <div class="row table-responsive">
-      <table class="table table-striped">
+    <div id="tabla" class="row table-responsive">
+      <table class="table table-striped table-hover">
         <thead>
-          <tr>
+          <tr class="table-primary">
             <th>Nome</th>
             <th>Poboación</th>
             <th>Actividade</th>

@@ -30,7 +30,7 @@ class Header extends HTMLElement {
               <a class="nav-link active" aria-current="page" href="/index.php">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">CITAS</a>
+              <a class="nav-link active" aria-current="page" href="/citas/index.php">CITAS</a>
             </li>
             <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/persoas/index.php">PERSOAS</a>
@@ -43,7 +43,7 @@ class Header extends HTMLElement {
               <a class="nav-link active" aria-current="page" href="/login/logout.php">SAÍR</a>
             </li>
           </ul>
-         
+         </div>
         <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
         <div class="input-group">
         <input class="form-control border rounded-start" type="text" placeholder="..." id="example-search-input">
