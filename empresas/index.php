@@ -5,13 +5,14 @@ require '../conexion/sesion.php';
 $where = "";
 
 if (!empty($_POST)) {
-	$valor = $_POST['campo'];
-	if (!empty($valor)) {
-		$where = "WHERE nome LIKE '%".$valor."%'";
-	}
+  $valor = $_POST['campo'];
+  if (!empty($valor)) {
+    $where = "WHERE nome LIKE '%" . $valor . "%'";
+  }
 }
 $sql = "SELECT * FROM empresas $where";
 $resultado = $mysqli->query($sql);
+
 
 ?>
 
@@ -19,7 +20,7 @@ $resultado = $mysqli->query($sql);
 <html lang="gl">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/index.css">
   <script src="../components/js/header.js"></script>
   <script src="../components/js/footer.js"></script>
@@ -28,17 +29,17 @@ $resultado = $mysqli->query($sql);
 
 <body>
 
-	<!-- header -->
-	<header-component></header-component>
+  <!-- header -->
+  <header-component></header-component>
 
-	<!-- ENCABEZADO -->
-	<div class="container mb-4">
-  <div class="  mt-4 mb-3 text-center d-flex justify-content-center ">
-        <h2 class="text-primary  w-25">Empresas</h2>
-        </div>
+  <!-- ENCABEZADO -->
+  <div class="container mb-4">
+    <div class="  mt-4 mb-3 text-center d-flex justify-content-center ">
+      <h2 class="text-primary  w-25">Empresas</h2>
+    </div>
     <div class="container mb-5">
       <div class="row">
-       
+
         <div class="col">
           <a href="functions/nuevo.php" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="currentColor" class="bi bi-person-plus" viewBox="-3 1 18 18">
               <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
@@ -56,34 +57,32 @@ $resultado = $mysqli->query($sql);
         </div>
       </div>
     </div>
-		<!-- TABLA -->
-		<div class="row table-responsive">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Poboación</th>
-                        <th>Actividade</th>
-                        <th>Data de incorporación</th>
-                        <th>Teléfono</th>
-                        <th>Fax</th>
+    <!-- TABLA -->
+    <div class="row table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Poboación</th>
+            <th>Actividade</th>
+            <th>Data de incorporación</th>
+            <th>Teléfono</th>
+            <th>Fax</th>
             <th>Accións</th>
-                    </tr>
-                </thead>
+          </tr>
+        </thead>
 
-                <tbody>
-                    <?php while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) { ?>
-                        <tr>
-                            <td><?php echo $row['id']; ?></td>
-                            <td><?php echo $row['nome']; ?></td>
-                            <td><?php echo $row['poboacion']; ?></td>
-                            <td><?php echo $row['actividade']; ?></td>
-                            <td><?php echo $row['data_incorporacion']; ?></td>
+        <tbody>
+          <?php while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) { ?>
+            <tr>
+              <td><?php echo $row['nome']; ?></td>
+              <td><?php echo $row['poboacion']; ?></td>
+              <td><?php echo $row['actividade']; ?></td>
+              <td><?php echo $row['data_incorporacion']; ?></td>
               <td></td>
               <td></td>
-                            <!-- <td><?php echo $row['ofertas_contratacion']; ?></td> -->
-                            <!-- <td><?php echo $row['ofertas_formacion']; ?></td> -->
+              <!-- <td><?php echo $row['ofertas_contratacion']; ?></td> -->
+              <!-- <td><?php echo $row['ofertas_formacion']; ?></td> -->
               <td class="d-flex"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye " viewBox="0 0 16 16">
                     <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
                     <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
@@ -96,12 +95,12 @@ $resultado = $mysqli->query($sql);
                     <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
                   </svg></a>
               </td>
-                        </tr>
-					<?php } ?>
-				</tbody>
-			</table>
-		</div>
-	</div>
+            </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <!-- footer -->
   <footer-component></footer-component>

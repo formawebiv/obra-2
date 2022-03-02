@@ -39,9 +39,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
     <ul class="t-contents">
 
       <li class="t-content">
-        <h3 class="p-5 text-left">MODIFICAR EMPRESA</h3>
-
-        <form class="row g-3" method="POST" action="update.php" autocomplete="off">
+        <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
 
           <div class="col-md-4">
             <label for="nome" class="control-label">NOME:</label>
@@ -198,8 +196,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
       </li>
 
       <li class="t-content">
-        <h3 class="p-5 text-left">SEGUIMENTO</h3>
-        <div class="col-sm-10">
+        <div class="col-sm-10 mt-4">
               <select class="form-control" id="canle" name="canle">
               <option value="text" disabled selected hidden>...</option>
               <option value="">Web</option>

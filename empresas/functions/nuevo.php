@@ -41,10 +41,7 @@ require '../../conexion/sesion.php';
     <ul class="t-contents">
 
       <li class="t-content">
-        <!-- <p>Contenido Datos</p> -->
-        <h3 class="p-5 text-left">NOVA EMPRESA</h3>
-
-        <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
+               <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
         <div class="col-md-4">
             <label for="nome" class="control-label">NOME:</label>
             <div class="col-sm-10">
@@ -198,8 +195,7 @@ require '../../conexion/sesion.php';
       </li>
 
       <li class="t-content">
-        <h3 class="p-5 text-left">SEGUEMENTO</h3>
-        <div class="col-sm-10">
+        <div class="col-sm-10 mt-4">
               <select class="form-control" id="canle" name="canle">
               <option value="text" disabled selected hidden>...</option>
               <option value="">Web</option>
