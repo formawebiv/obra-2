@@ -21,7 +21,7 @@ require '../conexion/sesion.php';
 
   <header-component></header-component>
 
-  <div class="master-container">
+  <div class="master-container w-75">
 
     <div class="container-resumo">
       <h1>Axenda</h1>
@@ -44,7 +44,7 @@ require '../conexion/sesion.php';
         ?>
       </div>
       <div class="row">
-        <a href="crear.php" class="btn btn-primary mb-4">Nova Cita</a>
+        <a href="crear.php" class="btn btn-primary mb-4 w-25">Nova Cita</a>
       </div>
 
     </div>
