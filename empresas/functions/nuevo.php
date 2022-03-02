@@ -199,6 +199,14 @@ require '../../conexion/sesion.php';
 
       <li class="t-content">
         <h3 class="p-5 text-left">SEGUEMENTO</h3>
+        <div class="col-sm-10">
+              <select class="form-control" id="canle" name="canle">
+              <option value="text" disabled selected hidden>...</option>
+              <option value="">Web</option>
+                <option value="">Física</option>
+                <option value="">Por contacto</option>
+              </select>
+            </div>
         <!-- BOTON MODAL QUE SE ABRE AL PULSAR EL NUEVO SEGUIMIENTO -->
         <div class="my-4">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Novo Seguemento</button>

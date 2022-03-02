@@ -1,43 +1,82 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@sformaweb 
+DavidSeo4
+/
+obra-2
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+obra-2/empresas/functions/update.php /
+
+= oki
+Latest commit e35760e 1 hour ago
+ History
+ 0 contributors
+54 lines (40 sloc)  2.05 KB
+   
 <?php
 
-	require '../../conexion/conexion.php';
-  require '../../conexion/sesion.php';
+require '../../conexion/conexion.php';
 
 
-	$id = $_POST['id'];
-	$nome = $_POST['nome'];
-	$poboacion = $_POST['poboacion'];
-	$actividade = $_POST['actividade'];
-	$data_incorporacion = $_POST['data_incorporacion'];
-	$ofertas_contratacion = $_POST['ofertas_contratacion'];
-	$ofertas_formacion = $_POST['ofertas_formacion'];
+$id = $_POST['id'];
+$nome = $_POST['nome'];
+$poboacion = $_POST['poboacion'];
+$actividade = $_POST['actividade'];
+$data_incorporacion = $_POST['data_incorporacion'];
+$ofertas_contratacion = $_POST['ofertas_contratacion'];
+$ofertas_formacion = $_POST['ofertas_formacion'];
 
-	$sql = "UPDATE empresas SET nome='$nome', poboacion='$poboacion', actividade='$actividade', data_incorporacion='$data_incorporacion', ofertas_contratacion='$ofertas_contratacion', ofertas_formacion='$ofertas_formacion' WHERE id='$id'";
-	$resultado = $mysqli->query($sql);
+$sql = "UPDATE empresas SET nome='$nome', poboacion='$poboacion', actividade='$actividade', data_incorporacion='$data_incorporacion', ofertas_contratacion='$ofertas_contratacion', ofertas_formacion='$ofertas_formacion' WHERE id='$id'";
+$resultado = $mysqli->query($sql);
 ?>
 
 <html lang="es">
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="/assets/css/index.css">
+
 </head>
 
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="row" style="text-align:center">
-					<?php if($resultado) { ?>
-						<h3>REGISTRO MODIFICADO</h3>
-						<a href="/empresas/index.php" class="btn btn-primary">VOLTAR</a>
-						<?php } else { ?>
-						<h3>ERROR AL MODIFICAR</h3>
-						<a href="modificar.php" class="btn btn-primary">VOLTAR</a>
-					<?php } ?>
+<body>
+	<div class="modal modal-sheet position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSheet">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content rounded-6 shadow">
+				<div class="modal-header border-bottom-0">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body py-0 ">
+					<h3 style="text-align: center;" class="modal-title"> REXISTRO MODIFICADO</h3>
+					<div class="d-flex justify-content-center mt-3">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+							<path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+						</svg>
+					</div>
+
+				</div>
+				<div class="modal-footer flex-column border-top-0">
+
+					<a href="../index.php" class="btn btn-lg btn-outline-success w-50 mx-0 mb-5 mt-4">VOLTAR</a>
 
 				</div>
 			</div>
 		</div>
+	</div>
 
-	</body>
+
+</body>
+
 </html>

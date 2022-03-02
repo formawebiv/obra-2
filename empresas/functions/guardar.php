@@ -1,18 +1,36 @@
 <?php
-
+	
 	require '../../conexion/conexion.php';
-  require '../../conexion/sesion.php';
-
+	
 	$nome = $_POST['nome'];
 	$poboacion = $_POST['poboacion'];
 	$actividade = $_POST['actividade'];
 	$data_incorporacion = $_POST['data_incorporacion'];
     $ofertas_contratacion = $_POST['ofertas_contratacion'];
     $ofertas_formacion = $_POST['ofertas_formacion'];
+	
+	
 
+	
+	// $arrayIntereses = null;
+	
+	// $num_array = count($intereses);
+	// $contador = 0;
+	
+	// if($num_array>0){
+	// 	foreach ($intereses as $key => $value) {
+	// 		if ($contador != $num_array-1){
+	// 		$arrayIntereses .= $value.' ';
+	// 		$contador++;
+	// 		} else {
+	// 		$arrayIntereses .= $value;
+	// 		}
+	// 	}
+	// }
+	
 	$sql = "INSERT INTO empresas (nome, poboacion, actividade, data_incorporacion, ofertas_contratacion, ofertas_formacion) VALUES ('$nome', '$poboacion', '$actividade', '$data_incorporacion', '$ofertas_contratacion', '$ofertas_formacion')";
 	$resultado = $mysqli->query($sql);
-
+	
 ?>
 
 <html lang="es">
@@ -23,7 +41,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-
+	
 	<body>
 		<div class="container">
 			<div class="row">
@@ -33,9 +51,9 @@
 						<?php } else { ?>
 						<h3>ERROR AO GARDAR</h3>
 					<?php } ?>
-
-					<a href="../index.php" class="btn btn-primary">Regresar</a>
-
+					
+					<a href="/empresas/index.php" class="btn btn-primary">Regresar</a>
+					
 				</div>
 			</div>
 		</div>
