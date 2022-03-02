@@ -27,16 +27,15 @@ require '../../conexion/sesion.php';
 
   <!-- <div class="container"> -->
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
-  <h2 style="text-align:center">"Novo Rexistro" de Empresa</h2><br>
+  <h2 class="my-4 text-center text-primary">Novo rexistro de empresa</h2>
 
   <div class="t-container">
 
     <ul class="t-tabs">
       <li class="t-tab">Datos Empresa</li>
-      <li class="t-tab">Seguimento</li>
+      <li class="t-tab">Seguemento</li>
       <li class="t-tab">Ofertas de Formación</li>
       <li class="t-tab">Ofertas de Contratación</li>
-      <li class="t-tab"><a href="../../login/logout.php">Saír da sesión</a></li>
     </ul>
 
     <ul class="t-contents">
@@ -46,64 +45,64 @@ require '../../conexion/sesion.php';
         <h3 class="p-5 text-left">NOVA EMPRESA</h3>
 
         <form class="row g-3" method="POST" action="guardar.php" autocomplete="off">
-          <div class="col-md-4">
-            <label for="nome" class="control-label">Nome:</label>
+        <div class="col-md-4">
+            <label for="nome" class="control-label">NOME:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="nombre" name="nome" placeholder="Nome" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="poboacion" class="ontrol-label">Localidade:</label>
+            <label for="poboacion" class="ontrol-label">LOCALIDADE:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="localidade" name="localidade" placeholder="Localidade..." required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="poboacion" class="ontrol-label">Poboación:</label>
+            <label for="poboacion" class="ontrol-label">POBOACIÓN:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="poboacion" name="poboacion" placeholder="Poboacion" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="actividade" class="control-label">Actividade:</label>
+            <label for="actividade" class="control-label">ACTIVIDADE:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="actividade" name="actividade" placeholder="Actividade" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="telefono" class="control-label">Teléfono:</label>
+            <label for="telefono" class="control-label">TELEFÓNO:</label>
             <div class="col-sm-10">
               <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" maxlength="9" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="telefono" class="control-label">Fax:</label>
+            <label for="telefono" class="control-label">FAX:</label>
             <div class="col-sm-10">
               <input type="tel" class="form-control" id="fax" name="fax" placeholder="Número de Fax" maxlength="9">
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="data_alta" class="control-label">Data de alta:</label>
+            <label for="data_alta" class="control-label">DATA DE ALTA:</label>
             <div class="col-sm-10">
               <input type="date" class="form-control" id="email" name="data_incorporacion" placeholder="dd-mm-aa" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="poboacion" class="ontrol-label">Persoa de Contacto</label>
+            <label for="poboacion" class="ontrol-label">PERSOA DE CONTACTO</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="persoa_contacto" name="persoa_contacto" placeholder="" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="orientador" class="control-label">Orientador/a</label>
+            <label for="orientador" class="control-label">ORIENTADOR/A</label>
             <div class="col-sm-10">
               <select class="form-control" id="orientador" name="orientador">
                 <option value="">Cea Rodríguez, Alberte</option>
@@ -114,21 +113,21 @@ require '../../conexion/sesion.php';
           </div>
 
           <div class="col-md-4">
-            <label for="ofertas_emprego" class="control-label">Ofertas de Emprego:</label>
+            <label for="ofertas_emprego" class="control-label">OFERTAS DE EMPREGO:</label>
             <div class="col-sm-10">
               <input type="number" class="form-control" id="email" name="ofertas_contratacion" placeholder="Ofertas emprego" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="ofertas_formacion" class="control-label">Ofertas de Formación:</label>
+            <label for="ofertas_formacion" class="control-label">OFERTAS DE FORMACIÓN:</label>
             <div class="col-sm-10">
               <input type="number" class="form-control" id="email" name="ofertas_formacion" placeholder="Ofertas formacion" required>
             </div>
           </div>
 
           <div>
-            <strong><label for="relacion-conselleria" class="control-label">Relacións coa consellería:</label></strong>
+            <strong><label for="relacion-conselleria" class="control-label">RELACIÓNS COA CONSELLERÍA:</label></strong>
           </div>
           <div>
             <div class="form-check form-check-inline col-2">
@@ -188,10 +187,10 @@ require '../../conexion/sesion.php';
             <textarea class="form-control" id="notas" name="notas" rows="3"></textarea>
           </div>
 
-          <div class="col-md-4">
-            <div class="col-sm-offset-2 col-sm-10">
-              <a href="../index.php" class="btn btn-default">Voltar</a>
-              <button type="submit" class="btn btn-primary">Gardar</button>
+          <div>
+            <div class="my-4">
+              <a href="../index.php" class="btn btn-default">VOLTAR</a>
+              <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
           </div>
         </form>
@@ -199,17 +198,23 @@ require '../../conexion/sesion.php';
       </li>
 
       <li class="t-content">
-        <h3 class="p-5 text-left">SEGUIMENTO</h3>
+        <h3 class="p-5 text-left">SEGUEMENTO</h3>
         <!-- BOTON MODAL QUE SE ABRE AL PULSAR EL NUEVO SEGUIMIENTO -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Novo Seguimento</button>
+        <div class="my-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Novo Seguemento</button>
+        </div>
       </li>
       <li class="t-content">
         <p>Non se encontraron Ofertas de Formación</p>
+        <div class="my-4">
         <button type="submit" class="btn btn-primary">Crear Oferta</button>
+        </div>
       </li>
       <li class="t-content">
         <p>Non se encontraron Ofertas de Contratación</p>
+        <div class="my-4">
         <button type="submit" class="btn btn-primary">Crear Oferta</button>
+        </div>
       </li>
 
     </ul>
@@ -228,7 +233,7 @@ require '../../conexion/sesion.php';
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Novo Seguimento</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Novo Seguemento</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

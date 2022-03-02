@@ -32,10 +32,9 @@ $resultado = $mysqli->query($sql);
   <!-- header -->
   <header-component></header-component>
 
-
   <div class="container mb-4">
   <div class="  mt-4 mb-3 text-center d-flex justify-content-center ">
-        <h2 class=" text-primary bg-secondary w-25 border rounded">Persoas</h2>
+        <h2 class="text-primary w-25">Persoas</h2>
         </div>
     <div class="container mb-5">
       <div class="row">
@@ -63,16 +62,16 @@ $resultado = $mysqli->query($sql);
       <table  class="table table-striped table-hover">
         <thead>
           <tr class="table-primary">
-            <th class="col-sm-1">Nome</th>
-            <th class="col-sm-2">1º Apelido</th>
-            <th class="col-sm-2">2º Apelido</th>
-            <th class="col-sm-1">DNI/NIF</th>
-            <th class="col-sm-3">Data de nacemento</th>
-            <th class="col-sm-1">Sexo</th>
-            <th class="col-sm-2">CP</th>
-            <th class="col-sm-1">Teléfono</th>
-            <th class="col-sm-2">Correo</th>
-            <th class="col-sm-1">Accións</th>
+            <th class="text-nowrap">Nome</th>
+            <th class="text-nowrap">1º Apelido</th>
+            <th class="text-nowrap">2º Apelido</th>
+            <th class="text-nowrap">DNI/NIF</th>
+            <th class="text-nowrap">Nacemento</th>
+            <th class="text-nowrap">Sexo</th>
+            <th class="text-nowrap">CP</th>
+            <th class="text-nowrap">Teléfono</th>
+            <th class="text-nowrap">Correo</th>
+            <th class="text-nowrap">Accións</th>
           </tr>
         </thead>
 

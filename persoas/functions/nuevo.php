@@ -18,7 +18,7 @@ require '../../conexion/sesion.php';
 <body>
 <header-component></header-component>
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
-  <h2 class="my-4 text-center">Novo rexistro de persoa</h2><br>
+  <h2 class="my-4 text-center text-primary">Novo rexistro de persoa</h2><br>
 
   <div class="t-container">
 
@@ -106,8 +106,7 @@ require '../../conexion/sesion.php';
             </div>
           </div>
 
-          <br>
-          <br>
+        
           <div class="col-md-4">
             <div class="my-4">
               <a href="../index.php" class="btn btn-default">VOLTAR</a>
