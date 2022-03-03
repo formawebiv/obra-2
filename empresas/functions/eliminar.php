@@ -4,7 +4,7 @@ require '../../conexion/sesion.php';
 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM persoas WHERE id = '$id'";
+$sql = "DELETE FROM empresas WHERE id = '$id'";
 $resultado = $mysqli->query($sql);
 ?>
 

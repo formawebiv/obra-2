@@ -3,6 +3,7 @@
 require '../../conexion/conexion.php';
 require '../../conexion/sesion.php';
 
+// $id = $_POST['id'];
 $nome = $_POST['nome'];
 $localidade = $_POST['localidade'];
 $poboacion = $_POST['poboacion'];
