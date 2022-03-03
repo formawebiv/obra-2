@@ -26,7 +26,7 @@ require 'conexion/sesion.php';
   <div class="container">
 
     <div class="p-4 m-2">
-      <h1 class="text-primary w-90 mb-5 px-4">Benvido á aplicación do Servizo de Orientación Laboral</h1>
+      <h1 class="text-primary text-center w-90 mb-5 px-4">Benvido/a ao Servizo de Orientación Laboral</h1>
     </div>
 
     <div class="row justify-content-md-center">

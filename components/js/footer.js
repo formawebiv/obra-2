@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
         
 <style>
 #foooter{
-  margin-top: 10%;
+  margin-top: min(35px, 10%);
   position:relative;
 }
 </style>

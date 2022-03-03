@@ -21,11 +21,11 @@ require '../conexion/sesion.php';
 
   <header-component></header-component>
 
-  <div class="master-container w-75">
+  <div class="master-container my-4">
 
-    <div class="container-resumo">
-      <h1>Axenda</h1>
-      <div class="row table-responsive">
+    <div class="container">
+      <h2 class="text-primary w-25 mb-5">Axenda</h2>
+      <div class="table-responsive d-flex justify-content-center">
         <?php
         $sql = "SELECT * FROM citas";
         $resultado = $mysqli->query($sql);
@@ -43,7 +43,7 @@ require '../conexion/sesion.php';
         $mysqli->close();
         ?>
       </div>
-      <div class="row">
+      <div class="row d-flex justify-content-end mt-2">
         <a href="crear.php" class="btn btn-primary mb-4 w-25">Nova Cita</a>
       </div>
 

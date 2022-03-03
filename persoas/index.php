@@ -33,7 +33,7 @@ $resultado = $mysqli->query($sql);
   <header-component></header-component>
 
   <div class="container mb-4">
-  <div class="  mt-4 mb-3 text-center d-flex justify-content-center ">
+  <div class="  mt-4 mb-3 text-center d-flex justify-content-center">
         <h2 class="text-primary w-25">Persoas</h2>
         </div>
     <div class="container mb-5">

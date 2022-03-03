@@ -33,7 +33,7 @@ $resultado = $mysqli->query($sql);
 </head>
 
 <body>
-<div class="modal modal-sheet position-static d-block bg-light py-5" tabindex="-1" role="dialog" id="modalSheet">
+<div class="modal modal-sheet position-static d-block bg-light d-flex align-items-center" tabindex="-1" role="dialog" id="modalSheet">
         <div class="modal-dialog" role="document">
             <div class="modal-content rounded-6 shadow">
                 <div class="modal-header border-bottom-0">

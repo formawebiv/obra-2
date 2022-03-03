@@ -97,7 +97,15 @@ $success: #7952b3;
   fill: currentColor;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Montserrat&display=swap');
 
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-family: 'Libre Franklin', sans-serif;
+}
 
 // Formulario login
 .form-signin {

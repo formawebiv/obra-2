@@ -72,6 +72,16 @@ $light: #5A7E99;
   fill: currentColor;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Montserrat&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+  font-family: 'Libre Franklin', sans-serif;
+}
+
 
 //PESTAÑAS SUBSECCIONES
 
