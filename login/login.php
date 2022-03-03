@@ -8,7 +8,7 @@
     <script src="../components/js/footer.js"></script>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/bootstrap-theme.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
     <title>Login de Usuario</title>
 </head>
 <!-- MENU SUPERIOR -->

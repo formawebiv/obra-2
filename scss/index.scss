@@ -78,9 +78,53 @@ $light: #5A7E99;
   font-family: 'Montserrat', sans-serif;
 }
 
-h2{
+h1, h2{
   font-family: 'Libre Franklin', sans-serif;
 }
+
+// Formulario login
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 7%;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  
+}
+
+#login-container{
+  background-color: #c1d8f0;
+  border-radius: 5px;
+  padding: 35px;
+}
+
+// Header login
+
+.navbar{
+height: 80px;
+}
+
+
 
 
 //PESTAÑAS SUBSECCIONES

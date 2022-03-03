@@ -35,12 +35,12 @@ require 'conexion/sesion.php';
   <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
   <div class="carousel-inner rounded-end " style="max-width: 400px;" >
     <div class="carousel-item active ">
-    <a href="/persoas/index.php"><img src="./assets/img/PIXECT-20220208103824.jpg" alt="persoas" style=" height:300px"></a>
+    <a href="/persoas/index.php"><img src="./assets/img/PIXECT-20220208103824.jpg" alt="persoas" style=" height:285px"></a>
         <p class="text-center">PERSOAS: REXISTRO, CONSULTA E MODIFICACIÓN</p>
 
     </div>
     <div class="carousel-item ">
-    <a href="/empresas/index.php"><img src="./assets/img/PIXECT-20220208103843.jpg" alt="Empresas" style="height:300px"></a>
+    <a href="/empresas/index.php"><img src="./assets/img/PIXECT-20220208103843.jpg" alt="Empresas" style="height:285px"></a>
         <p class="text-center">EMPRESAS: REXISTRO, CONSULTA E MODIFICACIÓN</p>
 
     </div>
