@@ -26,7 +26,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
   <header-component></header-component>
 
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
-  <h2 class="my-4 text-center text-primary">Modificar Empresa</h2><br>
+  <h2 class="my-4 text-center text-primary">Modificar Empresa</h2>
 
   <div class="t-container">
 
@@ -93,14 +93,14 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="poboacion" class="ontrol-label">PERSOA DE CONTACTO</label>
+            <label for="poboacion" class="ontrol-label">PERSOA DE CONTACTO:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="persoa_contacto" name="persoa_contacto" placeholder="" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="orientador" class="control-label">ORIENTADOR/A</label>
+            <label for="orientador" class="control-label">ORIENTADOR/A:</label>
             <div class="col-sm-10">
               <select class="form-control" id="orientador" name="orientador">
                 <option value="">Cea Rodríguez, Alberte</option>
@@ -181,7 +181,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Notas e consideracións</label>
+            <label for="exampleFormControlTextarea1">NOTAS E CONSIDERACIÓNS:</label>
             <textarea class="form-control" id="notas" name="notas" rows="3"></textarea>
           </div>
 
@@ -237,21 +237,21 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Novo Seguimento</h5>
+        <h5 class="modal-title" id="exampleModalLabel">NOVO SEGUIMENTO</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form method="POST" action="update.php" autocomplete="off">
 
           <div class="mb-3">
-            <label for="data_alta" class="control-label">Data de alta:</label>
+            <label for="data_alta" class="control-label">DATA ALTA:</label>
             <div class="col-sm-10">
               <input type="date" class="form-control" id="data_modal" name="data_incorporacion_modal" placeholder="dd-mm-aa" required>
             </div>
           </div>
 
           <div class="mb-3">
-            <label for="orientador" class="control-label">Orientador/a</label>
+            <label for="orientador" class="control-label">ORIENTADOR/A:</label>
             <div class="col-sm-10">
               <select class="form-control" id="orientador_modal" name="orientador_modal">
                 <option value="">Cea Rodríguez, Alberte</option>
@@ -263,7 +263,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
           <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">Anotacións</label>
+            <label for="floatingTextarea">ANOTACIÓNS:</label>
           </div>
 
           <div class="form-check form-check-inline">

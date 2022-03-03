@@ -33,7 +33,7 @@ require '../../conexion/sesion.php';
 
     <ul class="t-tabs">
       <li class="t-tab">Datos Empresa</li>
-      <li class="t-tab">Seguemento</li>
+      <li class="t-tab">Seguimento</li>
       <li class="t-tab">Ofertas de Formación</li>
       <li class="t-tab">Ofertas de Contratación</li>
     </ul>
@@ -92,14 +92,14 @@ require '../../conexion/sesion.php';
           </div>
 
           <div class="col-md-4">
-            <label for="poboacion" class="ontrol-label">PERSOA DE CONTACTO</label>
+            <label for="poboacion" class="ontrol-label">PERSOA DE CONTACTO:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="persoa_contacto" name="persoa_contacto" placeholder="" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="orientador" class="control-label">ORIENTADOR/A</label>
+            <label for="orientador" class="control-label">ORIENTADOR/A:</label>
             <div class="col-sm-10">
               <select class="form-control" id="orientador" name="orientador">
                 <option value="">Cea Rodríguez, Alberte</option>
@@ -180,7 +180,7 @@ require '../../conexion/sesion.php';
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Notas e consideracións</label>
+            <label for="exampleFormControlTextarea1">NOTAS E CONSIDERACIÓNS:</label>
             <textarea class="form-control" id="notas" name="notas" rows="3"></textarea>
           </div>
 
@@ -205,7 +205,7 @@ require '../../conexion/sesion.php';
             </div>
         <!-- BOTON MODAL QUE SE ABRE AL PULSAR EL NUEVO SEGUIMIENTO -->
         <div class="my-4">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Novo Seguemento</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Novo Seguimento</button>
         </div>
       </li>
       <li class="t-content">
@@ -237,7 +237,7 @@ require '../../conexion/sesion.php';
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Novo Seguemento</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Novo Seguimento</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

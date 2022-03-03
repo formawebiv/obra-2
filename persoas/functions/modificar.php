@@ -28,7 +28,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 <header-component></header-component>
 
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
-  <h2 class="text-center my-4">Modificar datos da persoa</h2>
+  <h2 class="text-center my-4 text-primary">Modificar datos da persoa</h2>
 
   <div class="t-container">
 
@@ -102,7 +102,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="telefono" class="control-label">TELÉFONO</label>
+            <label for="telefono" class="control-label">TELÉFONO:</label>
             <div class="col-sm-10">
               <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" maxlength="9" value="<?php echo $row['telefono']; ?>" required>
             </div>
@@ -132,7 +132,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
 
           <div class="col-md-4">
-            <label for="estudo" class="control-label">Estudos Básicos</label>
+            <label for="estudo" class="control-label">ESTUDOS BÁSICOS:</label>
             <div class="col-md-10">
               <select class="form-control" id="estudos" name="estudos">
               <option value="text" disabled selected hidden>Formación Básica</option>
@@ -143,7 +143,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="superiores" class="control-label">Estudos Superiores</label>
+            <label for="superiores" class="control-label">ESTUDOS SUPERIORES:</label>
             <div class="col-md-10">
               <select class="form-control" id="superiores" name="superiores">
               <option value="text" disabled selected hidden>Formación Superior</option>
@@ -154,7 +154,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="universitarios" class="control-label">Universitarios</label>
+            <label for="universitarios" class="control-label">UNIVERSITARIOS:</label>
             <div class="col-md-10">
               <select class="form-control" id="universitarios" name="universitarios">
               <option value="text" disabled selected hidden>Estudos Universitarios</option>
@@ -166,7 +166,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="non-universitarios" class="control-label">Non Universitarios</label>
+            <label for="non-universitarios" class="control-label">NON UNIVERSITARIOS: </label>
             <div class="col-md-10">
               <select class="form-control" id="non-universitarios" name="nonuniversitarios">
               <option value="text" disabled selected hidden>Outros</option>
@@ -177,7 +177,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="fp" class="control-label">Formación Profesional</label>
+            <label for="fp" class="control-label">FORMACIÓN PROFESIONAL:</label>
             <div class="col-md-10">
               <select class="form-control" id="formacion" name="formacion">
               <option value="text" disabled selected hidden>Formación Profesional</option>
@@ -189,7 +189,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="familias" class="control-label">Familias profesionais</label>
+            <label for="familias" class="control-label">FAMILIAS PROFESIONAIS:</label>
             <div class="col-md-10">
               <select class="form-control" id="familias" name="familias">
               <option value="text" disabled selected hidden>Familias profesionais</option>
@@ -203,7 +203,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="complementaria" class="control-label">Formación Complementaria</label>
+            <label for="complementaria" class="control-label">FORMACIÓN COMPLEMENTARIA:</label>
             <div class="col-md-10">
               <select class="form-control" id="complementaria" name="complementaria">
               <option value="text" disabled selected hidden>Formación Complementaria</option>
@@ -214,7 +214,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="idiomas" class="control-label">Idiomas</label>
+            <label for="idiomas" class="control-label">IDIOMAS:</label>
             <div class="col-md-10"></div>
             <select class="form-control" id="idiomas" name="idiomas">
               <optgroup label="Niveis">
@@ -234,7 +234,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="otros" class="control-label">Outros</label>
+            <label for="otros" class="control-label">OUTROS:</label>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="checkbox1">
               <label class="form-check-label" for="defaultCheck">Viviu no estranxeiro</label>
@@ -250,7 +250,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea">Notas e consideracións</label>
+            <label for="exampleFormControlTextarea">NOTAS E CONSIDERACIÓNS:</label>
             <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
           </div>
 
@@ -269,21 +269,21 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
-            <label for="ano_comezo" class="control-label">Ano de comezo:</label>
+            <label for="ano_comezo" class="control-label">ANO DE COMEZO:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="ano_comezo" name="ano_comezo" placeholder="Ano de comezo" maxlength="4" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="meses" class="control-label">Duración (en meses):</label>
+            <label for="meses" class="control-label">DURACIÓN (en meses):</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" placeholder="Número de meses" id="meses" name="meses" required>
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="posto" class="control-label">Posto/curso:</label>
+            <label for="posto" class="control-label">POSTO/CURSO:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" placeholder="Posto/curso" id="posto" name="posto" required>
             </div>
@@ -305,13 +305,13 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
 
           <div class="col-md-4">
-            <label for="data_nacemento" class="control-label">Data da 1ª entrevista</label>
+            <label for="data_nacemento" class="control-label">DATA DA 1ª ENTREVISTA:</label>
             <div class="col-sm-10">
               <input type="date" class="form-control" id="data_entrevista" name="data_entrevista" placeholder="dd-mm-aa" required>
             </div>
           </div>
           <div class="col-md-4">
-            <label for="orientador" class="control-label">Orientador/a</label>
+            <label for="orientador" class="control-label">ORIENTADOR/A:</label>
             <div class="col-sm-10">
               <select class="form-control" id="orientador" name="orientador">
                 <option value="">Cea Rodríguez, Alberte</option>
@@ -321,7 +321,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             </div>
           </div>
           <div class="col-md-4">
-            <label for="canle" class="control-label">Canle de acceso</label>
+            <label for="canle" class="control-label">CANLE DE ACCESO:</label>
             <div class="col-sm-10">
               <select class="form-control" id="canle" name="canle">
                 <option value="">Web</option>
@@ -331,7 +331,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             </div>
           </div>
           <div class="col-md-4">
-            <label for="canle" class="control-label">Seguemento</label>
+            <label for="canle" class="control-label">SEGUIMENTO:</label>
             <div class="col-sm-10">
               <select class="form-control" id="canle" name="canle">
                 <option value="">Web</option>
@@ -341,7 +341,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             </div>
           </div>
           <div class="col-md-4">
-            <label for="canle" class="control-label">Accións do SOL</label>
+            <label for="canle" class="control-label">ACCIÓNS DO SOL:</label>
             <div class="col-sm-10">
               <select class="form-control" id="canle" name="canle">
                 <option value="">Web</option>
@@ -352,7 +352,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Notas e consideracións</label>
+            <label for="exampleFormControlTextarea1">NOTAS E CONSIDERACIÓNS</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
 
@@ -372,7 +372,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
-            <label for="ofertade" class="control-label">Tipo de oferta:</label>
+            <label for="ofertade" class="control-label">TIPO DE OFERTA:</label>
             <div class="col-sm-10">
               <select class="form-control" id="ofertade" name="ofertade">
                 <option disabled selected>Elixe</option>
@@ -384,35 +384,35 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           </div>
 
           <div class="col-md-4">
-            <label for="ofertaemp" class="control-label">Empresa:</label>
+            <label for="ofertaemp" class="control-label">EMPRESA:</label>
             <div class="col-sm-10">
               <input type="text" placeholder="Empresa" class="form-control" id="ofertaemp" name="ofertaemp">
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="ofertapost" class="control-label">Posto:</label>
+            <label for="ofertapost" class="control-label">POSTO:</label>
             <div class="col-sm-10">
               <input type="text" placeholder="Posto" class="form-control" id="ofertapost" name="ofertapost">
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="ofertanum" class="control-label">Nº de ofertas:</label>
+            <label for="ofertanum" class="control-label">Nº DE OFERTAS:</label>
             <div class="col-sm-10">
               <input type="tel" class="form-control" id="ofertanum" name="ofertanum">
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="ofertadata" class="control-label">Data da oferta:</label>
+            <label for="ofertadata" class="control-label">DATA DA OFERTA:</label>
             <div class="col-sm-10">
               <input type="date" class="form-control" id="ofertadata" name="ofertadata">
             </div>
           </div>
 
           <div class="col-md-4">
-            <label for="ofertadata" class="control-label">Fin da oferta:</label>
+            <label for="ofertadata" class="control-label">FIN DA OFERTA:</label>
             <div class="col-sm-10">
               <input type="date" class="form-control" id="ofertadata" name="ofertadata">
             </div>

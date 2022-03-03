@@ -25,7 +25,7 @@ require 'conexion/sesion.php';
 <body>
 <header-component></header-component>
 
-<h2 class="text-primary w-25 my-5 mx-5">Persoas</h2>
+<h2 class="text-primary my-4 mx-5">Inicio</h2>
 
 <div class="container d-flex justify-content-center mt-5">
   <div class=" bg-primary rounded-start" style="max-width: 450px; height:350px">
