@@ -45,7 +45,7 @@ $resultado = $mysqli->query($sql);
         </div>
         <div class="modal-footer flex-column border-top-0">
 
-          <a href="../index.php" class="btn btn-lg btn-outline-success w-50 mx-0 mb-5 mt-4">VOLTAR</a>
+          <a href="../index.php" class="btn btn-lg btn-secondary w-50 mx-0 mb-5 mt-4">VOLTAR</a>
 
         </div>
       </div>
