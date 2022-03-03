@@ -109,7 +109,7 @@ require '../../conexion/sesion.php';
 
           <div class="col-md-4">
             <div class="my-4">
-              <a href="../index.php" class="btn btn-default">VOLTAR</a>
+              <a href="../index.php" class="btn btn-default">VOLVER</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
           </div>
@@ -246,7 +246,7 @@ require '../../conexion/sesion.php';
 
           <div class="col-md-4">
             <div class="my-4">
-              <a href="../index.php" class="btn btn-default">VOLTAR</a>
+              <a href="../index.php" class="btn btn-default">VOLVER</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
           </div>
@@ -279,7 +279,7 @@ require '../../conexion/sesion.php';
 
           <div class="col-md-4">
             <div class="my-4">
-              <a href="../index.php" class="btn btn-default">VOLTAR</a>
+              <a href="../index.php" class="btn btn-default">VOLVER</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
           </div>
@@ -347,7 +347,7 @@ require '../../conexion/sesion.php';
 
           <div class="col-md-4">
             <div class="my-4">
-              <a href="../index.php" class="btn btn-default">VOLTAR</a>
+              <a href="../index.php" class="btn btn-default">VOLVER</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
           </div>
@@ -407,7 +407,7 @@ require '../../conexion/sesion.php';
           
           <div class="col-md-4">
             <div class="my-4">
-              <a href="../index.php" class="btn btn-default">VOLTAR</a>
+              <a href="../index.php" class="btn btn-default">VOLVER</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
           </div>

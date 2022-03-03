@@ -187,8 +187,8 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
           <div class="my-4">
             <div class="col-sm-offset-2 col-sm-10">
-              <a href="../index.php" class="btn btn-default">Voltar</a>
-              <button type="submit" class="btn btn-primary">Gardar</button>
+              <a href="../index.php" class="btn btn-default">VOLVER</a>
+              <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
           </div>
         </form>

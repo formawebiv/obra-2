@@ -186,7 +186,7 @@ require '../../conexion/sesion.php';
 
           <div>
             <div class="my-4">
-              <a href="../index.php" class="btn btn-default">VOLTAR</a>
+              <a href="../index.php" class="btn btn-default">VOLVER</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
           </div>
