@@ -53,49 +53,49 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           <div class="col-md-4">
             <label for="poboacion" class="ontrol-label">LOCALIDADE:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="localidade" name="localidade" placeholder="Localidade..." required>
+              <input type="text" class="form-control" id="localidade" name="localidade" placeholder="Localidade..." value="<?php echo $row['localidade']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="poboacion" class="ontrol-label">POBOACIÓN:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="poboacion" name="poboacion" placeholder="Poboacion" required>
+              <input type="text" class="form-control" id="poboacion" name="poboacion" placeholder="Poboacion" value="<?php echo $row['poboacion']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="actividade" class="control-label">ACTIVIDADE:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="actividade" name="actividade" placeholder="Actividade" required>
+              <input type="text" class="form-control" id="actividade" name="actividade" placeholder="Actividade" value="<?php echo $row['actividade']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="telefono" class="control-label">TELÉFONO:</label>
             <div class="col-sm-10">
-              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" maxlength="9" required>
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" maxlength="9" value="<?php echo $row['telefono']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="telefono" class="control-label">FAX:</label>
             <div class="col-sm-10">
-              <input type="tel" class="form-control" id="fax" name="fax" placeholder="Número de Fax" maxlength="9">
+              <input type="tel" class="form-control" id="fax" name="fax" placeholder="Número de Fax" value="<?php echo $row['fax']; ?>" maxlength="9">
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="data_alta" class="control-label">DATA DE ALTA:</label>
             <div class="col-sm-10">
-              <input type="date" class="form-control" id="email" name="data_incorporacion" placeholder="dd-mm-aa" required>
+              <input type="date" class="form-control" id="email" name="data_incorporacion" placeholder="dd-mm-aa" value="<?php echo $row['data_incorporacion']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="poboacion" class="ontrol-label">PERSOA DE CONTACTO:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="persoa_contacto" name="persoa_contacto" placeholder="" required>
+              <input type="text" class="form-control" id="persoa_contacto" name="persoa_contacto" placeholder="" value="<?php echo $row['persoa_contacto']; ?>" required>
             </div>
           </div>
 
@@ -113,14 +113,14 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
           <div class="col-md-4">
             <label for="ofertas_emprego" class="control-label">OFERTAS DE EMPREGO:</label>
             <div class="col-sm-10">
-              <input type="number" class="form-control" id="email" name="ofertas_contratacion" placeholder="Ofertas emprego" required>
+              <input type="number" class="form-control" id="email" name="ofertas_contratacion" placeholder="Ofertas emprego" value="<?php echo $row['ofertas_contratacion']; ?>" required>
             </div>
           </div>
 
           <div class="col-md-4">
             <label for="ofertas_formacion" class="control-label">OFERTAS DE FORMACIÓN:</label>
             <div class="col-sm-10">
-              <input type="number" class="form-control" id="email" name="ofertas_formacion" placeholder="Ofertas formacion" required>
+              <input type="number" class="form-control" id="email" name="ofertas_formacion" placeholder="Ofertas formacion" value="<?php echo $row['ofertas_formacion']; ?>" required>
             </div>
           </div>
 
