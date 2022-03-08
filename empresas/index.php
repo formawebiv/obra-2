@@ -34,29 +34,26 @@ $resultado = $mysqli->query($sql);
 
   <!-- ENCABEZADO -->
   <div class="container mb-4">
-    <div class="  mt-4 mb-3 text-center d-flex justify-content-center ">
-      <h2 class="text-primary  w-25">Empresas</h2>
-    </div>
-    <div class="container mb-5">
-      <div class="row">
+    <nav class="navbar navbar-light my-4">
+      <div class="container-fluid">
+        <h2 class="text-primary  w-25">Empresas</h2>
 
-        <div class="col">
-          <a href="functions/nuevo.php" class="btn btn-primary text-white"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
-  <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
-</svg></a>
-        </div>
-        <div class="col">
-          <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
-            <div class="input-group mb-3">
-              <label class="w-50" for="campo"></label>
-              <input type="text" class="form-control rounded-start" type="text" id="campo" name="campo">
-              <input type="submit" id="enviar" name="enviar" value="Buscar" class="btn btn-primary rounded-end text-white" />
-            </div>
-          </form>
-        </div>
+        <form class="d-flex" action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
+          <div class="mr-4"> <a href="functions/nuevo.php" class="btn btn-primary mb-3 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
+                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+              </svg></a>
+            </a>
+          </div>
+          <div class="input-group mb-3 mx-2 w-6">
+
+            <input id="campo" name="campo" class="form-control" type="text" placeholder="Búsqueda" aria-label="Search">
+            <input type="submit" id="enviar" name="enviar" value="Buscar" class="btn btn-primary rounded-end text-white">
+          </div>
+        </form>
       </div>
-    </div>
+    </nav>
     <!-- TABLA -->
     <div id="tabla" class="row table-responsive">
       <table class="table table-striped table-hover">

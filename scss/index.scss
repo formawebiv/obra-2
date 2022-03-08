@@ -9,11 +9,11 @@ $primary:#5694DB;
 $secondary:#ffc300;
 $body-color: #333;
 $body-bg: #fff;
-$border-radius: .4rem;
+//$border-radius: .4rem;
 $success: #7952b3;
 $light: #5A7E99;
 
-//  $border-radius:0rem;
+  $border-radius:0rem;
 //  $baseBorderRadius:0;
 
 // Required
@@ -127,8 +127,6 @@ height: 80px;
 }
 
 
-
-
 //PESTAÑAS SUBSECCIONES
 
 /* CLASES DE LA ESTRUCTURA DE PESTAÑAS, DEBEN MANTENERSE
@@ -200,7 +198,6 @@ t-tab y t-content = elementos li -> NECESARIOS PARA EL JS */
   max-height: 3000px;
   transition: max-height 1.25s ease 0.5s;
 }
-/* los colores comentados son los originales del creador, los que quedan ativos son los que fui probando */
 
 /* AÑADIDO POR VER */
 .t-content p{
