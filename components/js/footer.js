@@ -12,24 +12,23 @@ class Footer extends HTMLElement {
   position:relative;
 }
 </style>
-
-
-  <div class="container" id="foooter">
-        <footer class="py-3">
-        <div class=" justify-content-center text-center container">
-      <span class="text-black ">© 2022 Servizo de Orientación Laboral</span>
-    
-        <hr>
-        
-          <ul class="nav   list-unstyled d-flex justify-content-center ">
-        <li class="ms-3 mx-3"><a class="text-muted" href="https://sede.vigo.org/portal-empregado/#/gestionLogin"><img src="../../assets/img/portal.png" width="35"></a></li>
-        <li class="ms-3 mx-3 "><a class="text-muted" href="https://correo.vigo.org/#1"><img src="../../assets/img/zimbra.png" width="40" ></a></li>
-          <li class="ms-3 mx-4 "><a class="text-muted" href="https://hoxe.vigo.org/"><img src="../../assets/img/conceemprego2.png" width="160"></a></li>
-        </ul>
-        
-        </div>
-        </footer>
-        <div>
+<div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<a href="/" class="d-flex mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+  <span class="text-black mt-2">&copy; 2022 Servizo de Orientación Laboral</span>
+</a>
+<ul class="nav col-md-4 d-flex justify-content-end list-unstyled">
+  <li class="ms-3">
+    <a class="text-muted" href="https://sede.vigo.org/portal-empregado/#/gestionLogin"><img class="bi" height="32"  src="../assets/img/portal.png"></a>
+  </li>
+  <li class="ms-3">
+    <a class="text-muted" href="https://correo.vigo.org/zimbra/"><img class="bi" height="32"  src="../assets/img/zimbra.png"></a>
+  </li>
+  <li class="ms-3">
+    <a class="text-muted" href="https://hoxe.vigo.org/"><img class="bi" height="32"  src="../assets/img/conceemprego2.png"></a>
+  </li>
+</ul>
+</div>
      `
         ;
   }

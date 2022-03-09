@@ -16,16 +16,15 @@ require 'conexion/sesion.php';
   <!-- CND de bootstrap -> cambiar cuando toque -->
   <script src="/assets/js/bootstrap.bundle.min.js"></script>
   <script src="../components/js/header.js"></script>
-  <script src="../components/js/footer.js"></script>
   <link rel="stylesheet" href="/assets/css/index.css">
 
 </head>
 
 <body>
+  <!-- Menú -->
   <header-component></header-component>
 
-  <!-- <h2 class="text-primary my-4 mx-5">Inicio</h2> -->
-
+  <!-- Contido principal -->
   <div class="container">
 
     <div class="p-4 m-2 text-primary">
@@ -41,7 +40,6 @@ require 'conexion/sesion.php';
 
         <div class="col col-sm-4 flex-column justify-content-right">
           <div class="card-body mt-5">
-            <!-- <h4 class="card-title">Enlaces directos</h4> -->
             <ul class="list-unstyled">
               <li class="mt-3">
                 <h4 class="card-text ">
@@ -51,7 +49,7 @@ require 'conexion/sesion.php';
               </li>
               <li class="mt-3">
                 <h4 class="card-text">
-                  <a class="text-muted inicio" href="https://correo.vigo.org/zimbra/"><img class="bi m-1" height="32" src="./assets/img/peque-zimbra.png"></a>
+                  <a class="text-muted inicio" href="https://correo.vigo.org/zimbra/"><img class="bi m-1" height="32" src="./assets/img/zimbra.png"></a>
                   Correo Zimbra
                 </h4>
               </li>
@@ -72,11 +70,24 @@ require 'conexion/sesion.php';
             </ul>
           </div>
         </div>
-
       </div>
     </div>
-  <footer-component></footer-component>
- 
+
+    <!-- Footer específico para inicio -->
+    <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <a href="/" class="d-flex mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap" />
+        </svg>
+        <span class="text-black mt-2">&copy; 2022 Servizo de Orientación Laboral</span>
+      </a>
+      <ul class="nav col-md-4 d-flex justify-content-end list-unstyled">
+        <li class="ms-3">
+          <a class="text-muted" href="https://hoxe.vigo.org/movemonos/empregolocal.php?lang=gal#/"><img class="bi" height="32" src="./assets/img/conceemprego2.png"></a>
+        </li>
+      </ul>
+    </div>
+
 
 </body>
 

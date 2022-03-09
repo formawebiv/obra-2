@@ -29,31 +29,32 @@ $resultado = $mysqli->query($sql);
 
 <body>
 
-  <!-- header -->
+  <!-- Menú -->
   <header-component></header-component>
 
-  <!-- ENCABEZADO -->
+  <!--  Encabezado: título y cuadro búsqueda -->
   <div class="container mb-4">
     <nav class="navbar navbar-light my-4">
       <div class="container-fluid">
         <h2 class="text-primary  w-25">Empresas</h2>
 
-        <form class="d-flex" action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
-          <div class="mr-4"> <a href="functions/nuevo.php" class="btn btn-primary mb-3 text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
-                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+        <form class="d-flex" action="./busqueda.php" method="POST">
+          <!-- Botón añadir nuevo -->
+          <div class="mr-4"> <a href="functions/nuevo.php" class="btn btn-white mb-3 rounded-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
               </svg></a>
-            </a>
           </div>
+          <!-- Buscador y botón buscar -->
           <div class="input-group mb-3 mx-2 w-6">
-
             <input id="campo" name="campo" class="form-control" type="text" placeholder="Búsqueda" aria-label="Search">
-            <input type="submit" id="enviar" name="enviar" value="Buscar" class="btn btn-primary rounded-end text-white">
+            <input type="submit" id="enviar" name="enviar" value="Buscar" class="btn btn-primary text-white rounded-0">
           </div>
         </form>
       </div>
     </nav>
+
     <!-- TABLA -->
     <div id="tabla" class="row table-responsive">
       <table class="table table-striped table-hover">
@@ -80,6 +81,7 @@ $resultado = $mysqli->query($sql);
               <td></td>
               <!-- <td><?php echo $row['ofertas_contratacion']; ?></td> -->
               <!-- <td><?php echo $row['ofertas_formacion']; ?></td> -->
+              <!-- Iconos acciones -->
               <td class="d-flex"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye " viewBox="0 0 16 16">
                     <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
                     <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
@@ -99,7 +101,7 @@ $resultado = $mysqli->query($sql);
     </div>
   </div>
 
-  <!-- footer -->
+  <!-- Componente footer -->
   <footer-component></footer-component>
 </body>
 
