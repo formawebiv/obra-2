@@ -22,25 +22,25 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
 <body>
 
-  <!-- header -->
+  <!-- Menú -->
   <header-component></header-component>
 
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
   <h2 class="my-4 text-center text-primary">Modificar Empresa</h2>
 
   <div class="t-container">
-
+    <!-- Pestañas superiores -->
     <ul class="t-tabs">
       <li class="t-tab">Datos Empresa</li>
       <li class="t-tab">Ofertas de Formación</li>
       <li class="t-tab">Ofertas de Contratación</li>
     </ul>
-
+    <!-- Contenido de cada apartado -->
     <ul class="t-contents">
 
       <li class="t-content">
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
-
+          <!-- Datos empresa -->
           <div class="col-md-4">
             <label for="nome" class="control-label">NOME:</label>
             <div class="col-sm-10">
@@ -192,19 +192,19 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             </div>
           </div>
         </form>
-
       </li>
-
+      <!-- Seguimiento -->
       <li class="t-content">
         <div class="col-sm-10 mt-4">
-              <select class="form-control" id="canle" name="canle">
-              <option value="text" disabled selected hidden>...</option>
-              <option value="">Web</option>
-                <option value="">Física</option>
-                <option value="">Por contacto</option>
-              </select>
-            </div>
+          <select class="form-control" id="canle" name="canle">
+            <option value="text" disabled selected hidden>...</option>
+            <option value="">Web</option>
+            <option value="">Física</option>
+            <option value="">Por contacto</option>
+          </select>
+        </div>
         <!-- BOTON MODAL QUE SE ABRE AL PULSAR EL NUEVO SEGUIMIENTO -->
+        <!-- Ofertas de formación -->
         <div class="my-4">
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Novo Seguimento</button>
         </div>
@@ -212,20 +212,21 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
       <li class="t-content">
         <p>Non se encontraron Ofertas de Formación</p>
         <div class="my-4">
-        <button type="submit" class="btn btn-primary">Crear Oferta</button>
+          <button type="submit" class="btn btn-primary">Crear Oferta</button>
         </div>
       </li>
+      <!-- Ofertas de contratación -->
       <li class="t-content">
         <p>Non se encontraron Ofertas de Contratación</p>
         <div class="my-4">
-        <button type="submit" class="btn btn-primary">Crear Oferta</button>
+          <button type="submit" class="btn btn-primary">Crear Oferta</button>
         </div>
       </li>
 
     </ul>
   </div>
 
-  <!-- footer -->
+  <!-- Componente footer -->
   <footer-component></footer-component>
 
   <script src="../../tabs.js"></script>

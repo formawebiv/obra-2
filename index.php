@@ -13,8 +13,7 @@ require 'conexion/sesion.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OBRA 2 SOL</title>
-  <!-- CND de bootstrap -> cambiar cuando toque -->
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="/assets/js/bootstrap.bundle.min.js"></script> JS de Bootstrap -->
   <script src="../components/js/header.js"></script>
   <link rel="stylesheet" href="/assets/css/index.css">
 

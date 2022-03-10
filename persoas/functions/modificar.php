@@ -17,21 +17,20 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modificar Persoa</title>
-  <!-- esto no sirve no? -->
   <link rel="stylesheet" href="/assets/css/index.css">
   <script src="/components/js/header.js"></script>
-    <script src="/components/js/footer.js"></script>
+  <script src="/components/js/footer.js"></script>
 </head>
 
 <body>
-
-<header-component></header-component>
+  <!-- Menú -->
+  <header-component></header-component>
 
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
   <h2 class="text-center my-4 text-primary">Modificar datos da persoa</h2>
 
   <div class="t-container">
-
+    <!-- Pestañas superiores -->
     <ul class="t-tabs">
       <li class="t-tab">Datos Personales</li>
       <li class="t-tab">Formación</li>
@@ -40,13 +39,11 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
       <li class="t-tab">Ofertas</li>
     </ul>
 
+    <!-- Contenido de cada apartado -->
     <ul class="t-contents">
-
       <li class="t-content">
-        <!-- <p>Contenido Datos</p> -->
-
-
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
+          <!-- Datos persoais -->
           <div class="col-md-4">
             <label for="nome" class=" control-label">NOME:</label>
             <div class="col-sm-10">
@@ -126,16 +123,13 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
       </li>
 
       <li class="t-content">
-        <!-- <p>Contenido Formación</p> -->
-
-
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
-
+          <!-- Formación -->
           <div class="col-md-4">
             <label for="estudo" class="control-label">ESTUDOS BÁSICOS:</label>
             <div class="col-md-10">
               <select class="form-control" id="estudos" name="estudos">
-              <option value="text" disabled selected hidden>Formación Básica</option>
+                <option value="text" disabled selected hidden>Formación Básica</option>
                 <option value="ESO">E.S.O</option>
                 <option value="COU">C.O.U</option>
               </select>
@@ -146,7 +140,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="superiores" class="control-label">ESTUDOS SUPERIORES:</label>
             <div class="col-md-10">
               <select class="form-control" id="superiores" name="superiores">
-              <option value="text" disabled selected hidden>Formación Superior</option>
+                <option value="text" disabled selected hidden>Formación Superior</option>
                 <option value="uni">Universitarios</option>
                 <option value="nouni">Non Universitarios</option>
               </select>
@@ -157,7 +151,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="universitarios" class="control-label">UNIVERSITARIOS:</label>
             <div class="col-md-10">
               <select class="form-control" id="universitarios" name="universitarios">
-              <option value="text" disabled selected hidden>Estudos Universitarios</option>
+                <option value="text" disabled selected hidden>Estudos Universitarios</option>
                 <option value="grao">Grao</option>
                 <option value="master">Master</option>
                 <option value="master">Doutorado</option>
@@ -169,7 +163,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="non-universitarios" class="control-label">NON UNIVERSITARIOS: </label>
             <div class="col-md-10">
               <select class="form-control" id="non-universitarios" name="nonuniversitarios">
-              <option value="text" disabled selected hidden>Outros</option>
+                <option value="text" disabled selected hidden>Outros</option>
                 <option value="bacharelato">Bacharelato</option>
                 <option value="formacion-profesional">Formación Profesional</option>
               </select>
@@ -180,7 +174,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="fp" class="control-label">FORMACIÓN PROFESIONAL:</label>
             <div class="col-md-10">
               <select class="form-control" id="formacion" name="formacion">
-              <option value="text" disabled selected hidden>Formación Profesional</option>
+                <option value="text" disabled selected hidden>Formación Profesional</option>
                 <option value="superior">Superior</option>
                 <option value="media">Media</option>
                 <option value="basica">Básica</option>
@@ -192,7 +186,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="familias" class="control-label">FAMILIAS PROFESIONAIS:</label>
             <div class="col-md-10">
               <select class="form-control" id="familias" name="familias">
-              <option value="text" disabled selected hidden>Familias profesionais</option>
+                <option value="text" disabled selected hidden>Familias profesionais</option>
                 <option value="informatica">Informática e comunicacións</option>
                 <option value="admin">Administración e Xestión</option>
                 <option value="madeira">Madeira, moble e corcho</option>
@@ -206,7 +200,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <label for="complementaria" class="control-label">FORMACIÓN COMPLEMENTARIA:</label>
             <div class="col-md-10">
               <select class="form-control" id="complementaria" name="complementaria">
-              <option value="text" disabled selected hidden>Formación Complementaria</option>
+                <option value="text" disabled selected hidden>Formación Complementaria</option>
                 <option value="certificados">Certificados Oficiais</option>
                 <option value="curso">Curso Manipulador de Alimentos</option>
               </select>
@@ -218,7 +212,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
             <div class="col-md-10"></div>
             <select class="form-control" id="idiomas" name="idiomas">
               <optgroup label="Niveis">
-              <option value="text" disabled selected hidden>Niveis</option>
+                <option value="text" disabled selected hidden>Niveis</option>
                 <option value="B1">B1</option>
                 <option value="B2">B2</option>
               </optgroup>
@@ -226,7 +220,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
             <select class="form-control" id="idiomas" name="idiomas">
               <optgroup label="Curso">
-              <option value="text" disabled selected hidden>Certificación</option>
+                <option value="text" disabled selected hidden>Certificación</option>
                 <option value="text">Cambridge</option>
                 <option value="text">Oxford</option>
               </optgroup>
@@ -263,10 +257,8 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
         </form>
       </li>
 
+      <!-- Experiencia -->
       <li class="t-content">
-        <!-- <p>Contenido Experiencia</p> -->
-
-
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ano_comezo" class="control-label">ANO DE COMEZO:</label>
@@ -298,12 +290,9 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
         </form>
       </li>
 
+      <!-- Accións -->
       <li class="t-content">
-        <!-- <p>Contenido Acciones</p> -->
-
-
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
-
           <div class="col-md-4">
             <label for="data_nacemento" class="control-label">DATA DA 1ª ENTREVISTA:</label>
             <div class="col-sm-10">
@@ -366,10 +355,8 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
       </li>
 
+      <!-- Ofertas -->
       <li class="t-content">
-        <!-- <p>Contenido Ofertas</p> -->
-
-
         <form class="row g-3 mt-4" method="POST" action="update.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ofertade" class="control-label">TIPO DE OFERTA:</label>

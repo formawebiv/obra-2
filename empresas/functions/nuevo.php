@@ -10,11 +10,6 @@ require '../../conexion/sesion.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nova Empresa</title>
-  <!-- CND de bootstrap -> cambiar cuando toque -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-  <!-- ESTILOS DE LAS PESTAÑAS Y SU CONTENIDO -> MODIFICAR CON BOOTSTRAP O LO QUE SEA -->
-  <!-- <link rel="stylesheet" href="../../tabs.css"> -->
   <link rel="stylesheet" href="../../assets/css/index.css">
   <script src="../../components/js/header.js"></script>
   <script src="../../components/js/footer.js"></script>
@@ -22,27 +17,27 @@ require '../../conexion/sesion.php';
 
 <body>
 
-  <!-- header -->
+  <!-- Menú -->
   <header-component></header-component>
 
-  <!-- <div class="container"> -->
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
   <h2 class="my-4 text-center text-primary">Novo rexistro de empresa</h2>
 
   <div class="t-container">
-
+    <!-- Pestañas superiores -->
     <ul class="t-tabs">
       <li class="t-tab">Datos Empresa</li>
       <li class="t-tab">Seguimento</li>
       <li class="t-tab">Ofertas de Formación</li>
       <li class="t-tab">Ofertas de Contratación</li>
     </ul>
-
+    <!-- Contenido de cada apartado -->
     <ul class="t-contents">
 
       <li class="t-content">
-               <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
-        <div class="col-md-4">
+        <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
+          <!-- Datos empresa -->
+          <div class="col-md-4">
             <label for="nome" class="control-label">NOME:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="nombre" name="nome" placeholder="Nome" required>
@@ -196,36 +191,36 @@ require '../../conexion/sesion.php';
 
       <li class="t-content">
         <div class="col-sm-10 mt-4">
-              <select class="form-control" id="canle" name="canle">
-              <option value="text" disabled selected hidden>...</option>
-              <option value="">Web</option>
-                <option value="">Física</option>
-                <option value="">Por contacto</option>
-              </select>
-            </div>
+          <select class="form-control" id="canle" name="canle">
+            <option value="text" disabled selected hidden>...</option>
+            <option value="">Web</option>
+            <option value="">Física</option>
+            <option value="">Por contacto</option>
+          </select>
+        </div>
         <!-- BOTON MODAL QUE SE ABRE AL PULSAR EL NUEVO SEGUIMIENTO -->
+        <!-- Ofertas de formación -->
         <div class="my-4">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Novo Seguimento</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Novo Seguimento</button>
         </div>
       </li>
       <li class="t-content">
         <p>Non se encontraron Ofertas de Formación</p>
         <div class="my-4">
-        <button type="submit" class="btn btn-primary">Crear Oferta</button>
+          <button type="submit" class="btn btn-primary">Crear Oferta</button>
         </div>
       </li>
+      <!-- Ofertas de contratación -->
       <li class="t-content">
         <p>Non se encontraron Ofertas de Contratación</p>
         <div class="my-4">
-        <button type="submit" class="btn btn-primary">Crear Oferta</button>
+          <button type="submit" class="btn btn-primary">Crear Oferta</button>
         </div>
       </li>
 
     </ul>
   </div>
-  <!-- </div> -->
-
-  <!-- footer -->
+ <!-- Componente footer -->
   <footer-component></footer-component>
 
   <script src="../../tabs.js"></script>

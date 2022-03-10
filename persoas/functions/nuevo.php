@@ -11,33 +11,31 @@ require '../../conexion/sesion.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nova Persoa</title>
   <link rel="stylesheet" href="../../assets/css/index.css">
-    <script src="/components/js/header.js"></script>
+  <script src="/components/js/header.js"></script>
   <script src="/components/js/footer.js"></script>
 </head>
 
 <body>
-<header-component></header-component>
+  <!-- Menú -->
+  <header-component></header-component>
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
   <h2 class="my-4 text-center text-primary">Novo rexistro de persoa</h2>
 
   <div class="t-container">
-
+    <!-- Pestañas superiores -->
     <ul class="t-tabs">
       <li class="t-tab">Datos Persoais</li>
       <li class="t-tab">Formación</li>
       <li class="t-tab">Experiencia</li>
       <li class="t-tab">Accións</li>
       <li class="t-tab">Ofertas</li>
-      <!-- <li class="t-tab"><a href="../../login/logout.php">Saír da sesión</a></li> -->
     </ul>
-
+    <!-- Contenido de cada apartado -->
     <ul class="t-contents">
 
       <li class="t-content">
-        <!-- <p>Contenido Datos</p> -->
-
         <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
-
+          <!-- Datos persoais -->
           <div class="col-md-4">
             <label for="nome" class="control-label"> NOME:</label>
             <div class="col-sm-10">
@@ -77,8 +75,8 @@ require '../../conexion/sesion.php';
             <label for="sexo" class="control-label">SEXO:</label>
             <div class="col-sm-10">
               <select class="form-control" id="sexo" name="sexo">
-              <option value="text" disabled selected hidden>...</option>
-              <option value="HOME">Home</option>
+                <option value="text" disabled selected hidden>...</option>
+                <option value="HOME">Home</option>
                 <option value="MULLER">Muller</option>
                 <option value="OUTRO">Non definido</option>
               </select>
@@ -116,11 +114,9 @@ require '../../conexion/sesion.php';
         </form>
 
       </li>
-
+      <!-- Formación -->
       <li class="t-content">
-
         <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
-
           <div class="col-md-4">
             <label for="estudo" class="control-label">ESTUDOS BÁSICOS:</label>
             <div class="col-md-10">
@@ -136,7 +132,7 @@ require '../../conexion/sesion.php';
             <label for="superiores" class="control-label">ESTUDOS SUPERIORES:</label>
             <div class="col-md-10">
               <select class="form-control" id="superiores" name="superiores">
-              <option value="text" disabled selected hidden>Formación superior</option>
+                <option value="text" disabled selected hidden>Formación superior</option>
                 <option value="uni">Universitarios</option>
                 <option value="nouni">Non Universitarios</option>
               </select>
@@ -147,7 +143,7 @@ require '../../conexion/sesion.php';
             <label for="universitarios" class="control-label">UNIVERSITARIOS:</label>
             <div class="col-md-10">
               <select class="form-control" id="universitarios" name="universitarios">
-              <option value="text" disabled selected hidden>Formación universitaria</option>
+                <option value="text" disabled selected hidden>Formación universitaria</option>
                 <option value="grao">Grao</option>
                 <option value="master">Master</option>
                 <option value="master">Doutorado</option>
@@ -159,7 +155,7 @@ require '../../conexion/sesion.php';
             <label for="non-universitarios" class="control-label">NON UNIVERSITARIOS:</label>
             <div class="col-md-10">
               <select class="form-control" id="non-universitarios" name="nonuniversitarios">
-              <option value="text" disabled selected hidden>...</option>
+                <option value="text" disabled selected hidden>...</option>
                 <option value="bacharelato">Bacharelato</option>
                 <option value="outros">Outros</option>
               </select>
@@ -170,7 +166,7 @@ require '../../conexion/sesion.php';
             <label for="fp" class="control-label">FORMACIÓN PROFESIONAL:</label>
             <div class="col-md-10">
               <select class="form-control" id="formacion" name="formacion">
-              <option value="text" disabled selected hidden>Formación profesional</option>
+                <option value="text" disabled selected hidden>Formación profesional</option>
                 <option value="superior">Superior</option>
                 <option value="media">Media</option>
                 <option value="basica">Básica</option>
@@ -182,7 +178,7 @@ require '../../conexion/sesion.php';
             <label for="familias" class="control-label">FAMILIAS PROFESIONAIS:</label>
             <div class="col-md-10">
               <select class="form-control" id="familias" name="familias">
-              <option value="text" disabled selected hidden>Informática, administración...</option>
+                <option value="text" disabled selected hidden>Informática, administración...</option>
                 <option value="informatica">Informática e comunicacións</option>
                 <option value="admin">Administración e Xestión</option>
                 <option value="madeira">Madeira, moble e corcho</option>
@@ -196,7 +192,7 @@ require '../../conexion/sesion.php';
             <label for="complementaria" class="control-label">FORMACIÓN COMPLEMENTARIA:</label>
             <div class="col-md-10">
               <select class="form-control" id="complementaria" name="complementaria">
-              <option value="text" disabled selected hidden>Formación complementaria</option>
+                <option value="text" disabled selected hidden>Formación complementaria</option>
                 <option value="certificados">Certificados Oficiais</option>
                 <option value="curso">Curso Manipulador de Alimentos</option>
               </select>
@@ -208,7 +204,7 @@ require '../../conexion/sesion.php';
             <div class="col-md-10"></div>
             <select class="form-control" id="idiomas" name="idiomas">
               <optgroup label="Niveis">
-              <option value="text" disabled selected hidden>Niveis</option>
+                <option value="text" disabled selected hidden>Niveis</option>
                 <option value="B1">B1</option>
                 <option value="B2">B2</option>
               </optgroup>
@@ -216,7 +212,7 @@ require '../../conexion/sesion.php';
 
             <select class="form-control" id="idiomas" name="idiomas">
               <optgroup label="Curso">
-              <option value="text" disabled selected hidden>Certificación</option>
+                <option value="text" disabled selected hidden>Certificación</option>
                 <option value="text">Cambridge</option>
                 <option value="text">Oxford</option>
               </optgroup>
@@ -252,9 +248,8 @@ require '../../conexion/sesion.php';
           </div>
         </form>
       </li>
-
+      <!-- Experiencia -->
       <li class="t-content">
-
         <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ano_comezo" class="control-label">ANO DE COMEZO:</label>
@@ -285,10 +280,9 @@ require '../../conexion/sesion.php';
           </div>
         </form>
       </li>
-
+      <!-- Accións -->
       <li class="t-content">
-               <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
-
+        <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
           <div class="col-md-4">
             <label for="data_nacemento" class="control-label">DATA DA 1ª ENTREVISTA:</label>
             <div class="col-sm-10">
@@ -299,8 +293,8 @@ require '../../conexion/sesion.php';
             <label for="orientador" class="control-label">ORIENTADOR/A:</label>
             <div class="col-sm-10">
               <select class="form-control" id="orientador" name="orientador">
-              <option value="text" disabled selected hidden>...</option>
-              <option value="">Cea Rodríguez, Alberte</option>
+                <option value="text" disabled selected hidden>...</option>
+                <option value="">Cea Rodríguez, Alberte</option>
                 <option value="">García Barbosa, Eva</option>
                 <option value="">De Monasterio Roldan, Celia</option>
               </select>
@@ -310,8 +304,8 @@ require '../../conexion/sesion.php';
             <label for="canle" class="control-label">CANLE DE ACCESO:</label>
             <div class="col-sm-10">
               <select class="form-control" id="canle" name="canle">
-              <option value="text" disabled selected hidden>...</option>
-              <option value="">Web</option>
+                <option value="text" disabled selected hidden>...</option>
+                <option value="">Web</option>
                 <option value="">Física</option>
                 <option value="">Por contacto</option>
               </select>
@@ -321,8 +315,8 @@ require '../../conexion/sesion.php';
             <label for="canle" class="control-label">SEGUEMENTO:</label>
             <div class="col-sm-10">
               <select class="form-control" id="canle" name="canle">
-              <option value="text" disabled selected hidden>...</option>
-              <option value="">Web</option>
+                <option value="text" disabled selected hidden>...</option>
+                <option value="">Web</option>
                 <option value="">Física</option>
                 <option value="">Por contacto</option>
               </select>
@@ -332,8 +326,8 @@ require '../../conexion/sesion.php';
             <label for="canle" class="control-label">ACCIÓNS DO SOL:</label>
             <div class="col-sm-10">
               <select class="form-control" id="canle" name="canle">
-              <option value="text" disabled selected hidden>...</option>
-              <option value="">Web</option>
+                <option value="text" disabled selected hidden>...</option>
+                <option value="">Web</option>
                 <option value="">Física</option>
                 <option value="">Por contacto</option>
               </select>
@@ -352,11 +346,10 @@ require '../../conexion/sesion.php';
             </div>
           </div>
         </form>
-
       </li>
 
+      <!-- Ofertas -->
       <li class="t-content">
-
         <form class="row g-3 mt-4" method="POST" action="guardar.php" autocomplete="off">
           <div class="col-md-4">
             <label for="ofertade" class="control-label">TIPO DE OFERTA:</label>
@@ -404,19 +397,19 @@ require '../../conexion/sesion.php';
               <input type="date" class="form-control" id="ofertadata" name="ofertadata">
             </div>
           </div>
-          
+
           <div class="col-md-4">
             <div class="my-4">
               <a href="../index.php" class="btn btn-default">VOLVER</a>
               <button type="submit" class="btn btn-primary">GARDAR</button>
             </div>
           </div>
-</li>
-        </form>
+      </li>
+      </form>
     </ul>
   </div>
 
-
+  <!-- Componente footer -->
   <footer-component></footer-component>
   <script src="../../tabs.js"></script>
 
