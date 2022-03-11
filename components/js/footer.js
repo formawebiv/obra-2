@@ -19,13 +19,13 @@ class Footer extends HTMLElement {
 </a>
 <ul class="nav col-md-4 d-flex justify-content-end list-unstyled">
   <li class="ms-3">
-    <a class="text-muted" href="https://sede.vigo.org/portal-empregado/#/gestionLogin"><img class="bi" height="32"  src="../assets/img/portal.png"></a>
+    <a class="text-muted" href="https://sede.vigo.org/portal-empregado/#/gestionLogin"><img class="bi" height="32" alt="Portal do Empregado" src="../assets/img/portal.png"></a>
   </li>
   <li class="ms-3">
-    <a class="text-muted" href="https://correo.vigo.org/zimbra/"><img class="bi" height="32"  src="../assets/img/zimbra.png"></a>
+    <a class="text-muted" href="https://correo.vigo.org/zimbra/"><img class="bi" height="32" alt="Zimbra" src="../assets/img/zimbra.png"></a>
   </li>
   <li class="ms-3">
-    <a class="text-muted" href="https://hoxe.vigo.org/"><img class="bi" height="32"  src="../assets/img/conceemprego2.png"></a>
+    <a class="text-muted" href="https://hoxe.vigo.org/"><img class="bi" height="32" alt="Páxina do Concello de Vigo" src="../assets/img/conceemprego2.png"></a>
   </li>
 </ul>
 </div>

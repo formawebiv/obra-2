@@ -34,7 +34,7 @@ require 'conexion/sesion.php';
 
       <div class="row">
         <div class="col col-sm-8 d-flex flex-column justify-content-left">
-          <img src="./assets/img/cies.jpg" width="650" height="400" alt="cies">
+          <img src="./assets/img/cies.jpg" width="650" height="400" alt="Islas Cíes">
         </div>
 
         <div class="col col-sm-4 flex-column justify-content-right">
@@ -42,19 +42,19 @@ require 'conexion/sesion.php';
             <ul class="list-unstyled">
               <li class="mt-3">
                 <h4 class="card-text ">
-                  <a class="text-muted inicio " href="https://sede.vigo.org/portal-empregado/#/gestionLogin"><img class="bi m-1" height="32" src="./assets/img/portal.png"></a>
+                  <a class="text-muted inicio " href="https://sede.vigo.org/portal-empregado/#/gestionLogin"><img class="bi m-1" height="32" src="./assets/img/portal.png" alt="Portal do empregado"></a>
                   Portal do empregado
                 </h4>
               </li>
               <li class="mt-3">
                 <h4 class="card-text">
-                  <a class="text-muted inicio" href="https://correo.vigo.org/zimbra/"><img class="bi m-1" height="32" src="./assets/img/zimbra.png"></a>
+                  <a class="text-muted inicio" href="https://correo.vigo.org/zimbra/"><img class="bi m-1" height="32" src="./assets/img/zimbra.png"  alt="Zimbra"></a>
                   Correo Zimbra
                 </h4>
               </li>
               <li class="mt-3">
                 <h4 class="card-text">
-                  <a class="text-muted inicio" href="https://hoxe.vigo.org/"><img class="bi m-1" height="32" src="./assets/img/escudo.png"></a>
+                  <a class="text-muted inicio" href="https://hoxe.vigo.org/"><img class="bi m-1" height="32" src="./assets/img/escudo.png"  alt="Concello de Vigo"></a>
                   Concello de Vigo
                 </h4>
               </li>
@@ -82,7 +82,7 @@ require 'conexion/sesion.php';
       </a>
       <ul class="nav col-md-4 d-flex justify-content-end list-unstyled">
         <li class="ms-3">
-          <a class="text-muted" href="https://hoxe.vigo.org/movemonos/empregolocal.php?lang=gal#/"><img class="bi" height="32" src="./assets/img/conceemprego2.png"></a>
+          <a class="text-muted" href="https://hoxe.vigo.org/movemonos/empregolocal.php?lang=gal#/"><img class="bi" height="32" src="./assets/img/conceemprego2.png" alt="Concellería de Emprego de Vigo"></a>
         </li>
       </ul>
     </div>

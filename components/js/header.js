@@ -48,7 +48,7 @@ class Header extends HTMLElement {
          </div>
         <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
         <div class="input-group">
-        <input class="form-control border rounded-start" type="text" placeholder="..." id="example-search-input">
+        <input class="form-control border rounded-start" type="text" placeholder="..." id="example-search-input" alt="Barra de búsqueda">
         <span class="input-group-append">
             <button  class="btn btn-secondary rounded-0 rounded-end buscador" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"  class="bi bi-search" viewBox="0 0 16 16">
