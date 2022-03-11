@@ -5,15 +5,17 @@ $enable-shadows: true;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
 // Customize some defaults
+// -------------------------COLORES PALETA SASS----------------------------------------------
 $primary:#5694DB;
-$secondary:#ffc300;
+$secondary:#f7d559;
 $body-color: #333;
 $body-bg: #fff;
-$border-radius: .4rem;
+//$border-radius: .4rem;
 $success: #7952b3;
 $light: #5A7E99;
-
-  // $border-radius:0rem;
+// -------------------------FIN COLORES PALETA SASS----------------------------------------------
+// amarillo pollo:#ffc300
+$border-radius:0rem;
 //  $baseBorderRadius:0;
 
 // Required
@@ -34,22 +36,22 @@ $light: #5A7E99;
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
 @import "bootstrap/scss/button-group";
- @import "bootstrap/scss/nav";
- @import "bootstrap/scss/navbar"; 
- @import "bootstrap/scss/card";
- @import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
- @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
- @import "bootstrap/scss/carousel";
+@import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas"; // Requires transitions
 @import "bootstrap/scss/placeholders";
@@ -74,28 +76,39 @@ $light: #5A7E99;
   fill: currentColor;
 }
 
+// ----------------------------------FUENTES ENCABEZADO Y CONTENIDOS-------------------------------------
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Montserrat&display=swap');
 
-*{
+* {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2{
+h1,
+h2 {
   font-family: 'Libre Franklin', sans-serif;
 }
 
-// Formulario login
+// ----------------------------------FIN FUENTES ENCABEZADO Y CONTENIDOS-------------------------------------
+
+// -----------------------------------FORMULARIO LOGIN----------------------------------------------------------
 .form-signin {
   width: 100%;
-  max-width: 330px;
-  padding: 15px;
+  max-width: 31.25rem;
+  height: 21.875rem;
+  padding: .9375rem;
   margin: auto;
-  margin-top: 7%;
+  margin-top: 5%;
+}
+// ESTO QUEDA PENDIENTE-------------------------------------
+.form-floating {
+  margin-top: 1.5625rem;
+  width: 21.875rem;
 }
 
-.form-signin .checkbox {
-  font-weight: 400;
-  margin-top: 5px;
+.checkbox-recordame {
+  font-weight: 300;
+  font-size: medium;
+  margin-top: 1.875rem;
 }
 
 .form-signin .form-floating:focus-within {
@@ -103,7 +116,7 @@ h1, h2{
 }
 
 .form-signin input[type="text"] {
-  margin-bottom: -1px;
+  margin-bottom: -0.0625rem;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -111,23 +124,33 @@ h1, h2{
 .form-signin input[type="password"] {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  
+
+
+
 }
 
-#login-container{
+#login-container {
   background-color: #c1d8f0;
-  border-radius: 5px;
-  padding: 35px;
+  border-radius: .3125rem;
+  padding: 2.1875rem;
 }
 
-// Header login
+// ----------------------------------------FIN FORMULARIO LOGIN--------------------------------------------------
 
-.navbar{
-height: 80px;
+
+
+// -----------------------------------------HEADER LOGIN---------------------------------------------------------
+
+.navbar {
+  height: 5rem;
 }
 
+// -----------------------------------------FIN HEADER LOGIN---------------------------------------------------------
 
-//PESTAÑAS SUBSECCIONES
+
+
+
+// -----------------------------------------PESTAÑAS TABS/COMÚN A PERSOAS Y EMPRESAS---------------------------------
 
 /* CLASES DE LA ESTRUCTURA DE PESTAÑAS, DEBEN MANTENERSE
 t-container = caja div -> ESTILO MODIFICABLE
@@ -135,23 +158,25 @@ t-tabs y t-contents = lista ul -> COMPROBAR SI SE PUEDE
 t-tab y t-content = elementos li -> NECESARIOS PARA EL JS */
 
 .t-container {
-  margin: 10px auto;
+  margin: .625rem auto;
   padding: 0 2em;
 }
 
-.t-tab{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+.t-tab {
+  border-top-left-radius: .3125rem;
+  border-top-right-radius: .3125rem;
 }
 
-.t-tabs, .t-contents {
+.t-tabs,
+.t-contents {
   list-style-type: none;
   margin: 0;
   padding: 0 2% 0 2%;
   box-sizing: border-box;
 }
+
 .t-tabs li {
-  
+
   color: #fffefe;
   padding: 0.5em 0.7em;
   text-decoration: none;
@@ -161,31 +186,35 @@ t-tab y t-content = elementos li -> NECESARIOS PARA EL JS */
 
   background: rgba(158, 157, 157, 0.933);
   border-bottom: 0;
-  min-width: 40px;
-  margin-right: 2px;
+  min-width: 2.5rem;
+  margin-right: .125rem;
   margin-bottom: 0 !important;
   box-sizing: border-box;
   cursor: pointer;
 }
+
 .t-tabs li:hover {
   background-color: $secondary;
-  
+
 }
+
 .t-tabs li.selected {
-    cursor: default;
+  cursor: default;
   background: #585858;
 }
+
 .t-contents {
   padding: 0 !important
 }
+
 .t-content {
-  
+
   padding-left: 2%;
   padding-right: 2%;
   background-color: #c1d8f0;
   box-sizing: border-box;
-  border-radius: 5px;
-    width: 100%;
+  border-radius: .3125rem;
+  width: 100%;
   line-height: 1.3em;
   text-align: justify;
   z-index: 1;
@@ -194,63 +223,75 @@ t-tab y t-content = elementos li -> NECESARIOS PARA EL JS */
   transition: max-height 0.5s ease 0s;
   overflow: hidden;
 }
+
 .t-content.selected {
-  max-height: 3000px;
+  max-height: 187.5rem;
   transition: max-height 1.25s ease 0.5s;
 }
 
 /* AÑADIDO POR VER */
-.t-content p{
-  margin-top: 25px;
+.t-content p {
+  margin-top: 1.5625rem;
 }
 
-#tabla{
+#tabla {
   border-bottom: black 1px solid;
 }
 
-input[placeholder]{
+input[placeholder] {
   font-style: italic;
 }
 
-select[option]{
+select[option] {
   font-style: italic;
 }
 
-// ----------------------PAGINACION DE LAS TABLAS----------------------
+// ----------------------------------------- FIN PESTAÑAS TABS/COMÚN A PERSOAS Y EMPRESAS---------------------------------
+
+// ------------------------------------------ PAGINACION DE LAS TABLAS PERSOAS EMPRESAS------------------------------------------
 .pagination {
   list-style-type: none;
-  padding: 10px 0;
+  padding: .625rem 0;
   display: inline-flex;
   justify-content: space-between;
   box-sizing: border-box;
 }
+
 .pagination li {
   box-sizing: border-box;
-  padding-right: 10px;
+  padding-right: .625rem;
 }
+
 .pagination li a {
   box-sizing: border-box;
   background-color: #e2e6e6;
-  padding: 8px;
+  padding: .5rem;
   text-decoration: none;
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: bold;
   color: #616872;
-  border-radius: 4px;
+  border-radius: .25rem;
 }
+
 .pagination li a:hover {
   background-color: #d4dada;
 }
-.pagination .next a, .pagination .prev a {
+
+.pagination .next a,
+.pagination .prev a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: .75rem;
 }
+
 .pagination .currentpage a {
   // background-color: #518acb;
-background-color: $primary;
+  background-color: $primary;
   color: #fff;
 }
+
 .pagination .currentpage a:hover {
 
-background-color: rgb(78, 157, 248);
+  background-color: rgb(78, 157, 248);
 }
+
+// ------------------------------------------ FIN PAGINACION DE LAS TABLAS PERSOAS EMPRESAS------------------------------------------

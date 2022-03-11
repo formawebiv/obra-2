@@ -57,7 +57,7 @@
                 </div>
             </div>
 
-            <div class="checkbox mb-3">
+            <div class="checkbox-recordame mb-3">
                 <label>
                     <input type="checkbox" value="remember-me"> Recórdame
                 </label>
