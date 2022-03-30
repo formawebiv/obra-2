@@ -6,19 +6,12 @@ require '../../conexion/sesion.php';
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nova Empresa</title>
-  <link rel="stylesheet" href="../../assets/css/index.css">
-  <script src="../../components/js/header.js"></script>
-  <script src="../../components/js/footer.js"></script>
-</head>
-
 <body>
 
   <!-- Menú -->
-  <header-component></header-component>
+  <?php
+  include_once '../../inc/header.php';
+  ?>
 
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
   <h2 class="my-4 text-center text-primary">Novo rexistro de empresa</h2>
@@ -221,7 +214,9 @@ require '../../conexion/sesion.php';
     </ul>
   </div>
  <!-- Componente footer -->
-  <footer-component></footer-component>
+  <?php
+  include_once '../../inc/footer.php';
+  ?>
 
   <script src="../../tabs.js"></script>
 
