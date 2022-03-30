@@ -56,7 +56,7 @@
                     <input name="clave" type="password" class="form-control" placeholder="Clave" aria-label="Input group example" aria-describedby="basic-addon1">
                 </div>
             </div>
-
+            
             <div class="checkbox-recordame mb-3">
                 <label>
                     <input type="checkbox" value="remember-me"> Recórdame
