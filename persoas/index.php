@@ -39,13 +39,21 @@ if ($stmt = $mysqli->prepare('SELECT * FROM persoas ORDER BY id LIMIT ?,?')) {
 ?>
 
 <!DOCTYPE html>
+<html lang="gl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <script src="../components/js/header.js"></script>
+  <script src="../components/js/footer.js"></script>
+  <title>Persoas</title>
+</head>
 
 <body>
 
   <!--Menú-->
-  <?php
-  include_once '../inc/header.php';
-  ?>
+  <header-component></header-component>
 
   <!-- Encabezado: título y cuadro búsqueda -->
   <div class="container mb-4">
@@ -156,9 +164,7 @@ if ($stmt = $mysqli->prepare('SELECT * FROM persoas ORDER BY id LIMIT ?,?')) {
   </div>
 
   <!-- Componente footer -->
-  <?php
-  include_once '../inc/footer.php';
-  ?>
+  <footer-component></footer-component>
 
 </body>
 

@@ -10,12 +10,20 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 
 ?>
 <!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nueva Empresa</title>
+  <link rel="stylesheet" href="../../assets/css/index.css">
+  <script src="../../components/js/header.js"></script>
+  <script src="../../components/js/footer.js"></script>
+</head>
+
 <body>
 
   <!-- Menú -->
-  <?php
-  include_once '../../inc/header.php';
-  ?>
+  <header-component></header-component>
 
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
   <h2 class="my-4 text-center text-primary">Modificar Empresa</h2>
@@ -219,9 +227,7 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
   </div>
 
   <!-- Componente footer -->
-  <?php
-  include_once '../../inc/footer.php';
-  ?>
+  <footer-component></footer-component>
 
   <script src="../../tabs.js"></script>
 

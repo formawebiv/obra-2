@@ -17,12 +17,20 @@ $resultado = $mysqli->query($sql);
 ?>
 
 <!DOCTYPE html>
+<html lang="gl">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <script src="../components/js/header.js"></script>
+  <script src="../components/js/footer.js"></script>
+  <title>Empresas</title>
+</head>
+
 <body>
 
   <!-- Menú -->
-  <?php
-  include_once '../inc/header.php';
-  ?>
+  <header-component></header-component>
 
   <!--  Encabezado: título y cuadro búsqueda -->
   <div class="container mb-4">
@@ -94,9 +102,7 @@ $resultado = $mysqli->query($sql);
   </div>
 
   <!-- Componente footer -->
-  <?php
-  include_once '../inc/footer.php';
-  ?>
+  <footer-component></footer-component>
 </body>
 
 </html>
