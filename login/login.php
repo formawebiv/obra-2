@@ -3,19 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../components/js/footer.js"></script>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/index.css">
     <title>Login de Usuario</title>
 </head>
-
+<!-- MENU SUPERIOR -->
 <body>
-<?php
-include_once '../inc/header-out.php';?>
+    
 
-
-<!--<header>
+<header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
 
@@ -23,7 +23,7 @@ include_once '../inc/header-out.php';?>
             <h1 id="solh1" class="text-white">Servizo de Orientación Laboral</h1>
         </div>
     </nav>
-</header>-->
+</header>
 
 <main>
     <!-- LOGIN -->
@@ -33,7 +33,7 @@ include_once '../inc/header-out.php';?>
 
 
             <h1 class="h3 mb-3 fw-normal text-center">Inicia sesión</h1>
-            <!-- Usuario -->
+            <!-- Usuario --> 
             <div class="form-floating">
                 <div class="input-group w-100">
                     <span class="input-group-text" id="basic-addon1">
@@ -43,7 +43,7 @@ include_once '../inc/header-out.php';?>
                     </span>
                     <input name="nome" type="text" class="form-control" placeholder="Usuario" aria-label="Input group example" aria-describedby="basic-addon1">
                 </div>
-            </div>
+            </div> 
             <!-- Contrasinal -->
             <div class="form-floating">
                 <div class="input-group w-100">
@@ -67,11 +67,16 @@ include_once '../inc/header-out.php';?>
         </form>
     </div>
 
+    <!-- --------------------- -->
+
+
 </main>
+<!-- FOOTER -->
+
+<footer-component></footer-component> 
+
 
 </body>
-
-
 
 <?php
 if ($_POST) {
@@ -99,9 +104,6 @@ if ($_POST) {
         echo "Nome ou clave non válido";
     }
 }
-
-//Footer
-include_once '../inc/footer.php';
 ?>
 
 

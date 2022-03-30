@@ -19,7 +19,7 @@ $resultado = $mysqli->query($sql);
 
 ?>
 
-<html lang="gl">
+<html lang="es">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">

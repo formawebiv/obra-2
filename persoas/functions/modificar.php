@@ -11,11 +11,20 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modificar Persoa</title>
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <script src="/components/js/header.js"></script>
+  <script src="/components/js/footer.js"></script>
+</head>
+
 <body>
   <!-- Menú -->
-  <?php
-  include_once '../../inc/header.php';
-  ?>
+  <header-component></header-component>
 
   <!-- ESTRUCTURA PARA TENER VARIAS PESTAÑAS DINÁMICAS EN UNA MISMA PÁGINA -->
   <h2 class="text-center my-4 text-primary">Modificar datos da persoa</h2>
@@ -408,12 +417,8 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
     </ul>
   </div>
 
-  <!--Footer-->
-  <?php
-  include_once '../../inc/footer.php';
-  ?>
-
   <script src="../../tabs.js"></script>
+  <footer-component></footer-component>
 </body>
 
 </html>
