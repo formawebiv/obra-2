@@ -4,22 +4,15 @@ require '../conexion/sesion.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/assets/css/index.css">
-  <link rel="stylesheet" href="../citas/index.css">
-  <script src="../components/js/header.js"></script>
-  <script src="../components/js/footer.js"></script>
-
-</head>
 
 <body>
 
-  <header-component></header-component>
+  <!--Menú-->
+  <?php
+  include_once '../inc/header.php';
+  ?>
+
+  <!--Main-->
 
   <div class="master-container my-4">
 
@@ -48,12 +41,12 @@ require '../conexion/sesion.php';
       </div>
 
     </div>
-    
+
   </div>
-
-  <script src="./index.js"></script>
-
-  <footer-component></footer-component>
+  <!--Footer -->
+  <?php
+  include_once '../inc/footer.php';
+  ?>
 </body>
 
 
