@@ -4,7 +4,10 @@ require '../conexion/sesion.php';
 ?>
 
 <!DOCTYPE html>
-
+<html>
+<head>
+  <title>Citas</title>
+</head>
 <body>
 
   <!--Menú-->

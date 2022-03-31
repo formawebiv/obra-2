@@ -17,8 +17,10 @@ $resultado = $mysqli->query($sql);
 ?>
 
 <!DOCTYPE html>
-<body>
-
+<html>
+<head>
+  <title>Empresas</title>
+</head>
   <!-- Menú -->
   <?php
   include_once '../inc/header.php';
@@ -98,5 +100,4 @@ $resultado = $mysqli->query($sql);
   include_once '../inc/footer.php';
   ?>
 </body>
-
 </html>

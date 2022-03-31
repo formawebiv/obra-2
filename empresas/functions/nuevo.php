@@ -4,7 +4,10 @@ require '../../conexion/sesion.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+  <title>Engadir rexistro</title>
+</head>
 
 <body>
 
@@ -210,7 +213,6 @@ require '../../conexion/sesion.php';
           <button type="submit" class="btn btn-primary">Crear Oferta</button>
         </div>
       </li>
-
     </ul>
   </div>
  <!-- Componente footer -->

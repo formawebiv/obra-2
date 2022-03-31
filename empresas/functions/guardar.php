@@ -24,12 +24,10 @@ $resultado = $mysqli->query($sql);
 
 ?>
 
-<html lang="gl">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/index.css">
-
+  <title>Rexistro gardado</title>
 </head>
 <!-- Caja mensaje -->
 <body>
@@ -56,8 +54,5 @@ $resultado = $mysqli->query($sql);
       </div>
     </div>
   </div>
-
-
 </body>
-
 </html>

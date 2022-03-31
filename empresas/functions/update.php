@@ -24,12 +24,10 @@ notas='$notas' WHERE id='$id'";
 $resultado = $mysqli->query($sql);
 ?>
 
-<html lang="es">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/index.css">
-
+  <title>Modificar rexistro</title>
 </head>
 <!-- Caja mensaje -->
 
@@ -57,7 +55,5 @@ $resultado = $mysqli->query($sql);
             </div>
         </div>
     </div>
-
 </body>
-
 </html>

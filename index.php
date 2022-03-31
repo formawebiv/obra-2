@@ -7,6 +7,14 @@ require 'conexion/sesion.php';
 ?>
 
 <!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Benvid@ ao SOL
+  </title>
+</head>
+
 <body>
   <!-- Menú -->
 

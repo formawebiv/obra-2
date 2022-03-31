@@ -8,13 +8,11 @@ $sql = "DELETE FROM persoas WHERE id = '$id'";
 $resultado = $mysqli->query($sql);
 ?>
 
-<html lang="gl">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/index.css">
-
-</head>
+  <title>Rexistro eliminado</title>
+  </head>
 <!-- Caja mensaje -->
 <body>
   <div class="modal modal-sheet position-static d-block bg-secondary d-flex align-items-center" tabindex="-1" role="dialog" id="modalSheet">

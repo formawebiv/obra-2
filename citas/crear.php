@@ -5,6 +5,9 @@ require '../conexion/sesion.php';
 
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Engadir cita</title>
+</head>
 <body>
 <!-- HEADER -->
 <?php

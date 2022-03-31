@@ -11,6 +11,10 @@ $row = $resultado->fetch_array(MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
+<html>
+<head>
+  <title>Modificar rexistro</title>
+</head>
 <body>
   <!-- Menú -->
   <?php

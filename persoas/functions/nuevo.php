@@ -4,6 +4,10 @@ require '../../conexion/sesion.php';
 ?>
 
 <!DOCTYPE html>
+<html>
+<head>
+  <title>Novo rexistro</title>
+</head>
 <body>
   <!-- Menú -->
   <?php

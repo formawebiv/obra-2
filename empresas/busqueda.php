@@ -18,17 +18,9 @@ $consulta = $mysqli->query($sql);
 ?>
 
 <!DOCTYPE html>
-<html lang="gl">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Página principal de empresas, tabla de datos y enlaces a funciones">
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <script src="../components/js/header.js"></script>
-    <script src="../components/js/footer.js"></script>
-    <title>Empresas</title>
+  <title>Empresas</title>
 </head>
 
 <body>
