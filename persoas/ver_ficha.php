@@ -17,10 +17,12 @@ $row = $ficha->fetch_array(MYSQLI_ASSOC);
 </head>
 
 <body>
+<!--Header php-->
 <?php
 include_once '../inc/header.php';
 ?>
 
+<!--Tabla datos-->
 <main>
   <div class="container d-flex justify-content-center">
   <table class="table table-striped table-hover m-5">
@@ -63,6 +65,7 @@ include_once '../inc/header.php';
   </div>
 </main>
 
+<!--Footer php-->
 <?php
 include_once '../inc/footer.php';
 ?>
