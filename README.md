@@ -1,2 +1,2 @@
 ## Notas e consideracións
-* Segunda versión da aplicación do SOL.
+* Terceira versión da aplicación do SOL.
