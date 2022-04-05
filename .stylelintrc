@@ -1,5 +1,13 @@
 {
   "extends": [
-    "stylelint-config-twbs-bootstrap/scss"
-  ]
+    "stylelint-config-twbs-bootstrap/scss",
+    "stylelint-config-idiomatic-order",
+    "./node_modules/prettier-stylelint/config.js"
+  ],
+  "plugins": ["stylelint-prettier"],
+  "rules": {
+    "prettier/prettier": true,
+    "indentation": 4,
+    "string-quotes": "single"
+  }
 }
